@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Faqs Page :: ' . getSettings()->app_name)
+@section('title', 'Faqs Page :: ' . {{ getSettings()->app_name }})
 @push('styles')
     <style>
         details {

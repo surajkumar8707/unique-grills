@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section('title', 'About Page :: ' . getSettings()->app_name)
+@section('title', 'About Page :: ' . {{ getSettings()->app_name }})
 @section('content')
 <br><br><br>
     <section class="relative h-screen bg-cover bg-center" style="background-image: url('image-1715690317589.png');">
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         <div class="absolute inset-0 flex items-center justify-center">
-            <img alt="Hey Concrete Large Logo" class="w-1/3"
+            <img alt="{{ getSettings()->app_name }} Large Logo" class="w-1/3"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFPNLmcW3lfyvLcQVm7mwMoBpaVKEdUr9dFG3Er4SObQweOIbfRXUzpfOM6R5s6Gn7-KL1CuRjXHiqXPGbZofnQUO8YF4xktEaEWUJ50CBGogyNHKcBuog36hcJ8NkYXU9W3OpsDZtgI50JHZyxOZAlm282WozX_ojn4f6yGJhwsTiVI-BsWCRsR1KRmXcBncmBtZHOqoyhducOOL8DBHdmfmjdPV5RPXbtUJsC_XWzqTNd2CbM8eKygIBwaOK0DHq-kyXaYsfOXA" />
         </div>
     </section>
@@ -57,7 +57,7 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <img alt="Hey Concrete factory building" class="rounded-lg shadow-lg w-full"
+                    <img alt="{{ getSettings()->app_name }} factory building" class="rounded-lg shadow-lg w-full"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0osgLkdaVzq3VT3IjbgNGa9CZLlq6voLzt1DwE8NPgacA311ydw2ClmxviceXUhaeQikMDBsWfFzF9jbOe0Mabmgdh_1TIABJFYICO9ugksNx6Fywz3-em0CIfKkgELq8i5TO18GIWc37LmkAAJoZMGLONhOCGE2sLqbLOLqA5CvU0wVvujOnJvkJZ574ueAz1GwDJ17R3IlpEJLx4N2SdjBuIjAAARn-r7MO7uTZeR7scbB4_K-L-T56Iv6v5cTJv0dPwmFBYZk" />
                 </div>
                 <div>
@@ -92,13 +92,13 @@
     </section>
     <section class="py-24 bg-gray-50">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-semibold mb-2">WHAT CLIENTS SAY ABOUT HEY CONCRETE?</h2>
+            <h2 class="text-3xl font-semibold mb-2">WHAT CLIENTS SAY ABOUT {{ getSettings()->app_name }}?</h2>
             <p class="text-gray-600 mb-12">Discover what our valued clients have to say about their experience with
-                Hey Concrete.</p>
+                {{ getSettings()->app_name }}.</p>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-lg shadow-md text-left">
                     <div class="text-6xl text-gray-300 font-serif mb-4">“</div>
-                    <p class="text-gray-600 mb-6">Working with HEY CONCRETE was such an amazing experience. I had
+                    <p class="text-gray-600 mb-6">Working with {{ getSettings()->app_name }} was such an amazing experience. I had
                         some references who served my imagination on the primary level. After briefing the team
                         about my ideas and perspectives, what I received as a final drawing was such a delight. Take
                         this as an honest review from an artist.</p>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md text-left">
                     <div class="text-6xl text-gray-300 font-serif mb-4">“</div>
-                    <p class="text-gray-600 mb-6">Amazing experience working with "Hey Concrete". The company is
+                    <p class="text-gray-600 mb-6">Amazing experience working with "{{ getSettings()->app_name }}". The company is
                         very professional with promptness and dependability regarding their service. Not just this,
                         the company also shows their belief in social morals by incorporating quality and quantity,
                         both, are impressive! I would recommend this professional company that has strong work
@@ -117,9 +117,9 @@
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md text-left">
                     <div class="text-6xl text-gray-300 font-serif mb-4">“</div>
-                    <p class="text-gray-600 mb-6">Nothing beats HEY CONCRETE when it comes to customization. We had
+                    <p class="text-gray-600 mb-6">Nothing beats {{ getSettings()->app_name }} when it comes to customization. We had
                         some ideas for our compound walls but could not find the exact material. And that is when we
-                        came across this brand. The team at HEY CONCRETE gives you exactly what you desire. The best
+                        came across this brand. The team at {{ getSettings()->app_name }} gives you exactly what you desire. The best
                         part of their work is the level of finishing they get. The quality of work is also
                         excellent. Highly recommended.</p>
                     <p class="font-semibold">Ar. Sanjay</p>

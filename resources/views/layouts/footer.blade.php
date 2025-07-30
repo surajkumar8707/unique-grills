@@ -7,26 +7,32 @@
             </div>
             <div>
                 <h4 class="font-semibold mb-4 text-gray-400">COLLECTIONS</h4>
-                <ul class="space-y-2 text-sm">
+                {{-- <ul class="space-y-2 text-sm">
                     <li><a class="hover:underline" href="#">Brick Panels</a></li>
                     <li><a class="hover:underline" href="#">Brick Claddings</a></li>
                     <li><a class="hover:underline" href="#">Stone Panels</a></li>
                     <li><a class="hover:underline" href="#">Breeze Blocks</a></li>
                     <li><a class="hover:underline" href="#">Wood Panels</a></li>
-                </ul>
+                </ul> --}}
                 <ul class="space-y-2 text-sm mt-6">
-                    <li><a class="hover:underline" href="#">Projects</a></li>
+                    {{-- <li><a class="hover:underline" href="#">Projects</a></li>
                     <li><a class="hover:underline" href="#">Dealers</a></li>
-                    <li><a class="hover:underline" href="#">Careers with us</a></li>
-                    <li><a class="hover:underline" href="#">FAQs</a></li>
-                    <li><a class="hover:underline" href="#">Contact Us</a></li>
+                    <li><a class="hover:underline" href="#">Careers with us</a></li> --}}
+                    <li><a class="hover:underline" href="{{ route('front.privacy.policy') }}">Privacy Policy</a></li>
+                    <li> <a class="hover:underline" href="{{ route('front.terms.condition') }}">Terms of Use</a></li>
+                    <li> <a class="hover:underline" href="{{ route('front.shipping.policy') }}">Shipping Policy</a></li>
+                    <li> <a class="hover:underline" href="{{ route('front.refund.and.cancellation.policy') }}">Refund
+                            &amp; Cancellation Policy</a></li>  
+                    <li><a class="hover:underline" href="{{ route('front.faqs') }}">FAQs</a></li>
+                    <li><a class="hover:underline" href="{{ route('front.contact') }}">Contact Us</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-semibold mb-4 text-gray-400">GET IN TOUCH</h4>
-                <p class="text-sm mb-4">+91 95129 99987</p>
-                <p class="text-sm mb-4">Need help or have a question?<br />contact@heyconcrete.com</p>
-                <p class="text-sm mb-4">8th Floor, B-block, Empire business hub, Sola, Ahmedabad, 380060</p>
+                <p class="text-sm mb-4"><a href="tel:{{ $settings->contact }}">{{ $settings->contact }}</a></p>
+                <p class="text-sm mb-4">Need help or have a question?<br /><a
+                        href="mailto:{{ $settings->email }}">{{ $settings->email }}</a></p>
+                <p class="text-sm mb-4">{{ $settings->address }}</p>
                 <h4 class="font-semibold mb-2 text-gray-400">Office Hours</h4>
                 <p class="text-sm">Mon - Sat: 9:00 - 19:00</p>
                 <h4 class="font-semibold mt-6 mb-2 text-gray-400">TRUSTED BY</h4>
@@ -63,13 +69,15 @@
             </div>
         </div>
         <div class="border-t border-gray-700 pt-6 mt-6 flex justify-between items-center text-xs text-gray-400">
-            <p>© 2023 - HeyConcrete is a Brand of Wall Cladd Solutions Private Limited | Designed by Concrete
+            <p>© 2023 - {{ $settings->app_name }} is a Brand of Wall Cladd Solutions Private Limited | Designed by
+                Concrete
                 Studio.</p>
             <div class="flex space-x-4">
-                <a class="hover:underline" href="#">Privacy Policy</a>
-                <a class="hover:underline" href="#">Terms of Use</a>
-                <a class="hover:underline" href="#">Shipping Policy</a>
-                <a class="hover:underline" href="#">Refund &amp; Cancellation Policy</a>
+                <a class="hover:underline" href="{{ route('front.privacy.policy') }}">Privacy Policy</a>
+                <a class="hover:underline" href="{{ route('front.terms.condition') }}">Terms of Use</a>
+                <a class="hover:underline" href="{{ route('front.shipping.policy') }}">Shipping Policy</a>
+                <a class="hover:underline" href="{{ route('front.refund.and.cancellation.policy') }}">Refund &amp;
+                    Cancellation Policy</a>
             </div>
         </div>
     </div>

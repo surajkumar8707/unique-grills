@@ -120,6 +120,16 @@ class FrontController extends Controller
         return view('terms_condition');
     }
 
+    public function shippingPolicy()
+    {
+        return view('shipping_policy');
+    }
+
+    public function refundCancellationPolicy()
+    {
+        return view('refund_cancellation_policy');
+    }
+
     public function services()
     {
         return view('services');

@@ -18,11 +18,11 @@ class SettingSeeder extends Seeder
 
         // Seed new data
         Setting::create([
-            'app_name' => 'Travel Treck Treck and Tour',
-            'email' => 'travel@gmail.com',
+            'app_name' => 'Unique Grills Brochure',
+            'email' => 'uniquegrills_58@yahoo.com',
             'whatsapp' => '8707633860',
-            'contact' => '8707633860',
-            'address' => 'Gorakhpur',
+            'contact' => '+91 8800495357',
+            'address' => 'D-328, MIDC, TTC Industrial Area, Behind Ibis Hotel, Turbhe, Navi Mumbai - 400705',
             // 'header_image' => "assets/front/images/header.jpg",
             'header_image' => NULL,
             'is_fresh' => 1,

@@ -15,7 +15,7 @@
                     </div>
                     <div>
                         <h3 class="font-semibold text-lg text-gray-800">Physical Address</h3>
-                        <p class="text-gray-600 mt-2">Hey Concrete<br />Bedla, Bargaon rural,<br />Udaipur -
+                        <p class="text-gray-600 mt-2">{{ getSettings()->app_name }}<br />Bedla, Bargaon rural,<br />Udaipur -
                             313011,<br />Rajasthan, India</p>
                     </div>
                 </div>

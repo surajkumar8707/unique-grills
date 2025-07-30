@@ -82,7 +82,7 @@
 <header class="absolute top-0 left-0 w-full z-10 py-4 px-8">
     <div class="container mx-auto flex justify-between items-center">
         <div class="text-2xl font-bold text-gray-800">
-            <a href="#">HEY CONCRETE</a>
+            <a href="#">{{ getSettings()->app_name }}</a>
         </div>
         <nav class="hidden md:flex items-center space-x-8 header-nav">
             <a href="{{ route('front.home') }}">HOME</a>
@@ -96,7 +96,7 @@
             <span class="material-icons text-gray-800 cursor-pointer">search</span>
             <span class="material-icons text-gray-800 cursor-pointer">person_outline</span>
             <a class="border border-gray-800 text-gray-800 px-4 py-2 rounded-full text-sm hover:bg-gray-800 hover:text-white transition"
-                href="#">Get In Touch</a>
+                href="{{ route('front.contact') }}">Get In Touch</a>
         </div>
     </div>
 </header>

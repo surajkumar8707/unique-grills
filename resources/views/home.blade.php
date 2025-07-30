@@ -95,7 +95,7 @@
     </section>
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl font-semibold mb-8">WHAT CLIENTS SAY ABOUT HEY CONCRETE?</h2>
+            <h2 class="text-2xl font-semibold mb-8">WHAT CLIENTS SAY ABOUT {{ getSettings()->app_name }}?</h2>
             <div class="grid md:grid-cols-3 gap-8 text-left">
                 <div class="bg-white p-6 rounded-lg shadow-md relative">
                     <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
@@ -109,7 +109,7 @@
                 <div class="bg-white p-6 rounded-lg shadow-md relative">
                     <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
                     <p class="mt-12 text-sm text-gray-600 leading-relaxed">
-                        “We are extremely happy with the products from Hey Concrete. The quality of products is
+                        “We are extremely happy with the products from {{ getSettings()->app_name }}. The quality of products is
                         excellent and we love the raw and rustic feel that it gives to our space.”
                     </p>
                     <p class="mt-4 font-semibold text-sm">Hetal Shah</p>
@@ -118,7 +118,7 @@
                 <div class="bg-white p-6 rounded-lg shadow-md relative">
                     <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
                     <p class="mt-12 text-sm text-gray-600 leading-relaxed">
-                        “Hey Concrete has a very good collection of products and the quality is amazing. We used
+                        “{{ getSettings()->app_name }} has a very good collection of products and the quality is amazing. We used
                         their brick claddings for our project and we are really happy with the outcome.”
                     </p>
                     <p class="mt-4 font-semibold text-sm">Rajesh Kumar</p>
