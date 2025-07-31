@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="{{ $settings->app_name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ public_asset('assets/front/images/favicon.ico') }}" rel="icon" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
         rel="stylesheet" />
