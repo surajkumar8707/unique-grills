@@ -82,7 +82,11 @@
 <header class="absolute top-0 left-0 w-full z-10 py-4 px-8">
     <div class="container mx-auto flex justify-between items-center">
         <div class="text-2xl font-bold text-gray-800">
-            <a href="#">{{ getSettings()->app_name }}</a>
+            @if (getSettings()->header_image)
+            <img width="350" src="{{public_asset(getSettings()->header_image)}}" alt="">
+            @else
+                <a href="#">{{ getSettings()->app_name }}</a>
+            @endif
         </div>
         <nav class="hidden md:flex items-center space-x-8 header-nav">
             <a href="{{ route('front.home') }}">HOME</a>

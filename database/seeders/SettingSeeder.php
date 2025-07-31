@@ -23,8 +23,8 @@ class SettingSeeder extends Seeder
             'whatsapp' => '8707633860',
             'contact' => '+91 8800495357',
             'address' => 'D-328, MIDC, TTC Industrial Area, Behind Ibis Hotel, Turbhe, Navi Mumbai - 400705',
-            // 'header_image' => "assets/front/images/header.jpg",
-            'header_image' => NULL,
+            'header_image' => "assets/front/images/header.png",
+            // 'header_image' => NULL,
             'is_fresh' => 1,
         ]);
     }
