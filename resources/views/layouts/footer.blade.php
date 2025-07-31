@@ -21,8 +21,8 @@
                     <li><a class="hover:underline" href="{{ route('front.privacy.policy') }}">Privacy Policy</a></li>
                     <li> <a class="hover:underline" href="{{ route('front.terms.condition') }}">Terms of Use</a></li>
                     {{-- <li> <a class="hover:underline" href="{{ route('front.shipping.policy') }}">Shipping Policy</a></li>
-                    <li> <a class="hover:underline" href="{{ route('front.refund.and.cancellation.policy') }}">Refund --}}
-                            &amp; Cancellation Policy</a></li>
+                    <li> <a class="hover:underline" href="{{ route('front.refund.and.cancellation.policy') }}">Refund
+                            &amp; Cancellation Policy</a></li> --}}
                     <li><a class="hover:underline" href="{{ route('front.faqs') }}">FAQs</a></li>
                     <li><a class="hover:underline" href="{{ route('front.contact') }}">Contact Us</a></li>
                 </ul>
