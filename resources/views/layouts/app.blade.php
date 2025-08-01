@@ -15,12 +15,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="{{ public_asset('assets/front/css/style.css') }}" rel="stylesheet" />
     @stack('styles')
+
 </head>
 
 <body class="bg-white">
     @include('layouts.header')
-
-
     <main>
         @yield('content')
         <section class="py-12 text-center">

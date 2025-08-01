@@ -1,12 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\{HomePageCarousel, Setting, SocialMediaLink};
+use App\Models\{Categories, HomePageCarousel, Setting, SocialMediaLink};
 
 if (!function_exists('getSettings')) {
     function getSettings()
     {
         return Setting::first();
+    }
+}
+
+if (!function_exists('getCategories')) {
+    function getCategories()
+    {
+        return Categories::active()->get();
     }
 }
 
