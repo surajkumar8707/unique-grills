@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'About Page :: ' . {{ getSettings()->app_name }})
+@section('title', 'About Page :: ' . getSettings()->app_name)
 @section('content')
 <br><br><br>
     <section class="relative h-screen bg-cover bg-center" style="background-image: url('image-1715690317589.png');">
