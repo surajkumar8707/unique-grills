@@ -15,7 +15,8 @@
                     </div>
                     <div>
                         <h3 class="font-semibold text-lg text-gray-800">Physical Address</h3>
-                        <p class="text-gray-600 mt-2">{{ getSettings()->app_name }}<br />Bedla, Bargaon rural,<br />Udaipur -
+                        <p class="text-gray-600 mt-2">{{ getSettings()->app_name }}<br />Bedla, Bargaon rural,<br />Udaipur
+                            -
                             313011,<br />Rajasthan, India</p>
                     </div>
                 </div>
@@ -75,7 +76,8 @@
                         </div>
                     </div>
                     <div class="mb-4">
-                        <label class="block text-sm font-medium text-gray-700" for="city">City <span class="text-red-500">*</span></label>
+                        <label class="block text-sm font-medium text-gray-700" for="city">City <span
+                                class="text-red-500">*</span></label>
                         <input class="mt-1 block w-full border-b border-gray-300 focus:ring-0 focus:border-gray-500 py-2"
                             id="city" type="text" />
                     </div>

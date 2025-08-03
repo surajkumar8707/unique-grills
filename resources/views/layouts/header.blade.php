@@ -21,7 +21,7 @@
 
                 <div class="absolute top-full left-0 mt-2 w-48 bg-black text-white shadow-lg opacity-0 invisible transform -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-20">
                     @foreach (getCategories() as $category)
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">
+                        <a href="{{ route('front.show.categories', $category->slug) }}" class="block px-4 py-2 hover:bg-gray-800">
                             {{ $category->name }}
                         </a>
 
@@ -35,7 +35,7 @@
             </div>
 
             <!-- SHOP dropdown -->
-            <div class="relative group">
+            {{-- <div class="relative group">
                 <a href="#" class="flex items-center text-gray-800 hover:text-gray-600">
                     SHOP
                     <span class="material-icons text-sm ml-1">expand_more</span>
@@ -45,7 +45,7 @@
                     <a href="#" class="block px-4 py-2 hover:bg-gray-800">Shop Item 1</a>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-800">Shop Item 2</a>
                 </div>
-            </div>
+            </div> --}}
 
             <a href="#">DEALERS</a>
         </nav>

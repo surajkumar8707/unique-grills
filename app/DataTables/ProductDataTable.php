@@ -24,8 +24,8 @@ class ProductDataTable extends DataTable
             ->setRowId('id')
             ->addColumn(
                 'status',
-                            fn(Product $p) =>
-                            new HtmlString("
+                fn(Product $p) =>
+                new HtmlString("
                     <div class='form-check form-switch mb-2'>
                         <input type='checkbox' class='form-check-input change-status-input' data-product-id='{$p->id}' " . ($p->is_active ? 'checked' : '') . ">
                     </div>
@@ -39,6 +39,9 @@ class ProductDataTable extends DataTable
                 $dates = 'Created: ' . $product->created_at->diffForHumans() . '<br><hr/>';
                 $dates .= 'Updated: ' . $product->updated_at->diffForHumans();
                 return new HtmlString($dates);
+            })
+            ->addColumn('category', function (Product $product) {
+                return $product->category ? $product->category->name : '-';
             })
             ->addColumn('action', function (Product $product) {
                 $editUrl = route('admin.product.edit', $product);
@@ -69,7 +72,7 @@ class ProductDataTable extends DataTable
      */
     public function query(Product $product): QueryBuilder
     {
-        return $product->newQuery();
+        return $product->newQuery()->with('category');;
     }
 
     /**
@@ -156,6 +159,7 @@ class ProductDataTable extends DataTable
                 ->printable(false)
                 ->width(60)
                 ->addClass('text-center'),
+            Column::make('category')->title('Category'),
             Column::make('name'),
             Column::make('price'),
             Column::make('status'),

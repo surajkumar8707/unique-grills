@@ -27,6 +27,8 @@ Route::group(['prefix' => '/', 'as' => 'front.'], function () {
     Route::get('/terms-condition', [\App\Http\Controllers\FrontController::class, 'termsCondition'])->name('terms.condition');
     Route::get('/shipping-policy', [\App\Http\Controllers\FrontController::class, 'shippingPolicy'])->name('shipping.policy');
     Route::get('/refund-and-cancellation-policy', [\App\Http\Controllers\FrontController::class, 'refundCancellationPolicy'])->name('refund.and.cancellation.policy');
+    Route::get('/{category}', [\App\Http\Controllers\FrontController::class, 'showCategories'])->name('show.categories');
+    Route::get('/{category}/{product}', [\App\Http\Controllers\FrontController::class, 'showProducts'])->name('show.products');
     Route::get('/contact', [\App\Http\Controllers\FrontController::class, 'contactUs'])->name('contact');
     Route::post('/save-contact-us', [\App\Http\Controllers\FrontController::class, 'saveContactUs'])->name('save.contact');
 });

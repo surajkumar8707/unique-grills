@@ -15,6 +15,11 @@ class Categories extends Model
     //     return 'id';
     // }
 
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'category_id');
+    }
+
     public function getDescriptionAttribute($value)
     {
         return $value ?: 'No description available.';

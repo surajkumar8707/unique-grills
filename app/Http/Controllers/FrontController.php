@@ -166,4 +166,19 @@ class FrontController extends Controller
         // dd($contact);
         return redirect()->back()->with('success', "Thank you for contacting US");
     }
+
+    public function showCategories($category)
+    {
+        // Assuming you have a method to get categories by slug
+        $category = \App\Models\Categories::with('products')->where('slug', $category)->firstOrFail();
+        return view('categories.show', compact('category'));
+    }
+
+    public function showProducts($category, $product)
+    {
+        // Assuming you have a method to get products by category slug and product slug
+        $category = \App\Models\Category::where('slug', $category)->firstOrFail();
+        $product = \App\Models\Product::where('slug', $product)->where('category_id', $category->id)->firstOrFail();
+        return view('products.show', compact('category', 'product'));
+    }
 }
