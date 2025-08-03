@@ -2,10 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Auth\LoginController;
-use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\CustomerController;
-use App\Http\Controllers\Admin\HomePageCarouselController;
-
+use App\Http\Controllers\Admin\{AdminController, CustomerController, HomePageCarouselController, CategoriesController, ProductController};
 /*
 |--------------------------------------------------------------------------
 | Admin Routes
@@ -47,5 +44,14 @@ Route::middleware('role:admin')->group(function () {
     });
 
     Route::resource('home-page-carousel', HomePageCarouselController::class);
+    Route::resource('categories', CategoriesController::class);
+    Route::resource('product', ProductController::class);
     Route::post('/change-status', [HomePageCarouselController::class, 'changeStatus'])->name('change.status');
+
+    Route::group(['prefix' => '/ajax', 'as' => 'ajax.'], function () {
+        Route::post('/categories/change-status', [CategoriesController::class, 'changeStatus'])->name('categories.change.status');
+        Route::post('/product/change-status', [CategoriesController::class, 'changeStatus'])->name('product.change.status');
+        // Route::get('/our-room', [AdminController::class, 'ourRoomPage'])->name('our.room');
+        // Route::get('/gallery', [AdminController::class, 'galleryPage'])->name('gallery');
+    });
 });

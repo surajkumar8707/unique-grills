@@ -63,6 +63,19 @@
             </a>
         </li>
 
+        <li class="menu-item {{ isActiveRoute(['admin.categories.index', 'admin.categories.create', 'admin.categories.edit']) }}">
+            <a href="{{ route('admin.categories.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Categories</div>
+            </a>
+        </li>
+        <li class="menu-item {{ isActiveRoute(['admin.product.index', 'admin.product.create', 'admin.product.edit']) }}">
+            <a href="{{ route('admin.product.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Products</div>
+            </a>
+        </li>
+
         {{-- <li class="menu-item {{ isActiveRoute(['admin.bookings']) }}">
             <a href="{{ route('admin.bookings') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-calendar"></i>

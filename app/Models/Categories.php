@@ -10,10 +10,10 @@ class Categories extends Model
 {
     use HasFactory, SoftDeletes;
     protected $guarded = [];
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
+    // public function getRouteKeyName()
+    // {
+    //     return 'id';
+    // }
 
     public function getDescriptionAttribute($value)
     {

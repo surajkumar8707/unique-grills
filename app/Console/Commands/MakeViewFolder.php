@@ -12,7 +12,7 @@ class MakeViewFolder extends Command
      *
      * @var string
      */
-    protected $signature = 'make:viewfolder {folder}';
+    protected $signature = 'make:viewcrud {folder}';
 
     /**
      * The console command description.
