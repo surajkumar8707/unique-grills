@@ -13,7 +13,7 @@ if (!function_exists('getSettings')) {
 if (!function_exists('getCategories')) {
     function getCategories()
     {
-        return Categories::active()->get();
+        return Categories::with('products')->active()->get();
     }
 }
 

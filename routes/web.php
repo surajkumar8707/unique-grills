@@ -33,6 +33,7 @@ Route::group(['prefix' => '/', 'as' => 'front.'], function () {
 });
 
 // Add category/product routes LAST to avoid conflicts
+Route::get('/categories/{slug}', [\App\Http\Controllers\FrontController::class, 'showSingleCategories'])->name('show.categories');
 Route::get('/{category}/{product}', [\App\Http\Controllers\FrontController::class, 'showProducts'])->name('show.products');
 
 // Language switcher route

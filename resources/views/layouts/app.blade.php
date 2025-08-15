@@ -19,6 +19,7 @@
 </head>
 
 <body class="bg-white">
+    {{-- @dd(getCategories()->toArray()) --}}
     @include('layouts.header')
     <main>
         @yield('content')

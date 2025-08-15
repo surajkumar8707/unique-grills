@@ -62,22 +62,28 @@ class FrontController extends Controller
         return view('faqs');
     }
 
-    public function kedarnath(){
+    public function kedarnath()
+    {
         return view('kedarnath');
     }
-    public function tungnathChandrashila(){
+    public function tungnathChandrashila()
+    {
         return view('tungnath_chandrashila');
     }
-    public function nagTibba(){
+    public function nagTibba()
+    {
         return view('nag_tibba');
     }
-    public function valleyOfFlowers(){
+    public function valleyOfFlowers()
+    {
         return view('valley_of_flowers');
     }
-    public function harsilValley(){
+    public function harsilValley()
+    {
         return view('harsil_valley');
     }
-    public function chardhamYatra(){
+    public function chardhamYatra()
+    {
         return view('chardham_yatra');
     }
     public function room()
@@ -89,7 +95,7 @@ class FrontController extends Controller
     {
         // $mivans = Gallery::where(['status' => 1, 'type' => 'mivan'])->get();
         // $post_tensionings = Gallery::where(['status' => 1, 'type' => 'post_tensioning'])->get();
-        $galleries = Gallery::where('status',1)->get();
+        $galleries = Gallery::where('status', 1)->get();
         // dd($mivans->toArray(), $post_tensionings->toArray());
         return view('gallery', compact('galleries'));
     }
@@ -180,5 +186,16 @@ class FrontController extends Controller
         $category = \App\Models\Categories::where('slug', $category)->firstOrFail();
         $product = \App\Models\Product::where('slug', $product)->where('category_id', $category->id)->firstOrFail();
         return view('products.show', compact('category', 'product'));
+    }
+
+    public function showSingleCategories($slug)
+    {
+        try {
+            $category = \App\Models\Categories::with('products')->where('slug', $slug)->firstOrFail();
+            // dd($category);
+            return view('categories.single', compact('category'));
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Category not found.');
+        }
     }
 }
