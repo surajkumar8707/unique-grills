@@ -18,6 +18,43 @@ Route::get('/', function () {
     return redirect()->route('admin.login.form');
 });
 
+Route::get('/products', function () {
+    $jsonPath = database_path('seeders/data/categories_and_products/catalog_product.json');
+    $json = \Illuminate\Support\Facades\File::get($jsonPath);
+    $catalog_product = json_decode($json, true);
+
+    foreach ($catalog_product as $category) {
+        \App\Models\Categories::create([
+            'id' => $category['id'],
+            'name' => $category['name'],
+            'slug' => $category['slug'],
+            'description' => $category['description'] ?? null,
+            'is_active' => $category['is_active'] ?? null,
+        ]);
+        foreach ($category['product'] as $product) {
+            $default_image = "assets/front/images/image_not_available.jpg";
+            $product = \App\Models\Product::create([
+                'category_id' => $category['id'],
+                'name' => $product['name'],
+                'slug' => \Str::slug($product['name']),
+                'description' => (isset($product['description']) and !empty($product['description'])) ?? null,
+                'usage' => (isset($product['usage']) and !empty($product['usage'])) ?? null,
+                'minimum_quantity' => (isset($product['minimum_quantity']) and !empty($product['minimum_quantity'])) ?? null,
+                'size' => (isset($product['size']) and !empty($product['size'])) ?? null,
+                'price' => (isset($product['price']) and !empty($product['price'])) ?? null,
+                'image' => $default_image,
+                'is_active' => (isset($product['is_active']) and !empty($product['is_active'])) ?? 1,
+                'stock' => (isset($product['stock']) and !empty($product['stock'])) ?? null,
+                // 'sku' => (isset($product['sku']) and !empty($product['sku'])) ?? null,
+                'meta_title' => (isset($product['name']) and !empty($product['name'])) ?? null,
+                'meta_description' => (isset($product['description']) and !empty($product['description'])) ?? null,
+                'meta_keywords' => (isset($product['name']) and !empty($product['name'])) ?? null,
+                'meta_image' => $default_image ?? null,
+            ]);
+        }
+    }
+});
+
 // Front-end routes (non-admin)
 Route::group(['prefix' => '/', 'as' => 'front.'], function () {
     Route::get('/', [\App\Http\Controllers\FrontController::class, 'home'])->name('home');

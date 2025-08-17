@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "name": "RCC PRODUCTS",
+    "slug": "rcc-products",
+    "is_active": true,
+    "description" : "Welcome to our comprehensive range of Reinforced Cement Concrete (RCC) products. We specialize in durable, versatile, and high-performance precast concrete solutions for a wide array of construction and landscaping needs. Our products are designed for superior strength, longevity, and ease of installation, offering excellent value for your projects.",
+    "product": [
+      {
+        "name": "Flower Pot",
+        "description": "Table for landscape design, terrace gardens, public parks, road medians, and commercial or residential complexes.",
+        "usage": "Residential Homes Gardens, balconies, and terraces | Apartments & Societies Entry gates, common areas. | Commercial Spaces Malls, office campuses, hotels.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Bench",
+        "description": "An RCC Bench is a Reinforced Cement Concrete seating structure, commonly used in parks, public spaces, gardens, campuses, bus stops, and residential complexes. These benches are known for their durability, weather resistance, and low maintenance, making them ideal for outdoor use.",
+        "usage": "Public Parks & Gardens Standard seating areas. | Bus Stops Long-lasting public waiting seats | Schools & Campuses Durable seating for open areas",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Hume Pipe",
+        "description": "RCC Hume Pipes (also known as Reinforced Concrete Cement pipes) are cylindrical, precast concrete pipes reinforced with steel, used primarily for underground drainage, sewerage, stormwater, culverts, and irrigation systems. They are known for high strength, long life, and resistance to heavy loads.",
+        "usage": "Urban Infrastructure Drainage systems beneath roads and streets. | Roads & Railways Culverts and cross drains | Industrial Zones Large-scale water and waste disposal.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Dome",
+        "description": "An RCC Dome (Reinforced Cement Concrete Dome) is a curved, hemispherical concrete structure reinforced with steel bars, used in architectural, religious, institutional, and structural applications. RCC domes are known for their aesthetic appeal, structural efficiency, and ability to span large areas without columns.",
+        "usage": "Temples, Mosques, Churches As religious or sacred roof forms | Government Buildings Parliament domes, courts, assembly halls | Public Infrastructure Planetariums, museums, libraries",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Concrete Blocks",
+        "description": "RCC Concrete Blocks are precast solid or hollow units made from Reinforced Cement Concrete, used in construction of load-bearing walls, retaining walls, boundary walls, compound walls, and even pavement barriers. These blocks combine the compressive strength of concrete with the tensile reinforcement of steel, making them suitable for heavy-duty, structural applications",
+        "usage": "Industrial Zones High-stress partition or enclosure walls | Retaining Structures Basement walls, backfill support. | Highway Infrastructure Barriers, edging, or boundary block walls | Government/Defence Facilities Impact-resistant wall blocks.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Grass Paver",
+        "description": "RCC Grass Pavers are perforated precast concrete blocks designed to allow grass or ground cover to grow through openings, combining pavement strength with green aesthetics. These are also known as permeable pavers, green pavers, or eco-grid pavers, and are commonly used for eco-friendly landscaping, parking areas, and stormwater management systems.",
+        "usage": "Residential Lawns & Gardens Decorative yet functional walking/driving areas | Public Parks Green walkways, service paths. | Parking Lots Eco-parking for malls, offices, hotels. | Pathways & Driveways Especially where natural drainage is desired.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Concrete Hollow Block",
+        "description": "RCC Concrete Hollow Blocks are precast masonry units made from reinforced cement concrete with hollow cores. These blocks are engineered for strength, durability, and thermal efficiency, and are widely used in load-bearing walls, boundary walls, foundations, and retaining structures where both strength and reduced weight are needed.",
+        "usage": "Residential Buildings Structural and non-structural walls. | Industrial Warehouses Durable walls that resist impact and moisture. | School & Hospital Construction Cost-effective and rapid walling system. | Infrastructure Projects Cabins, utility walls, and enclosures.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Interlocking Brick",
+        "description": "RCC Interlocking Bricks are precast cement concrete blocks engineered with a tongue-and-groove (interlocking) design that fits bricks tightly together without mortar. When reinforced with steel (RCC), they gain additional strength, making them ideal for structural walls, retaining walls, boundary walls, and even pavements or slope protection.",
+        "usage": "Low-Cost Housing Fast construction with structural integrity | Retaining Walls Gravity-based or reinforced interlocking walls. | Perimeter & Boundary Walls Secure and uniform appearance | Garden Walls Decorative yet strong fences.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Table",
+        "description": "An RCC Table is a precast concrete furniture piece made from Reinforced Cement Concrete, designed for durability, weather resistance, and low maintenance. These tables are ideal for outdoor public spaces, parks, gardens, schools, industrial canteens, and government or municipal zones where robust and tamper-proof furniture is needed.",
+        "usage": "Public Parks Paired with benches for family gatherings. | Educational Campuses Study or lunch tables in outdoor areas. | Industrial Zones Canteen tables for workers. | Resorts & Hotels Outdoor garden seating.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "GRC PRODUCTS",
+    "slug": "grc-products",
+    "description": "GRC is a high-performance composite material made from a mix of cement, aggregate, water, chemical admixtures, and high-strength alkali-resistant (AR) glass fibres. The inclusion of glass fibres gives GRC its remarkable flexural and tensile strength, allowing for the creation of lightweight, thin, and intricate designs.",
+    "is_active": true,
+    "product": [
+      {
+        "name": "Pillar Column",
+        "description": "GRC Pillar Columns are architectural vertical elements made using Glassfiber Reinforced Concrete (GRC) – a lightweight, durable, and moldable composite material. GRC pillars are widely used in both structural cladding and decorative applications, offering aesthetic flexibility with classical or modern styles.",
+        "usage": "Residential Villas Porch, balcony, entrance column | Temples & Mosques Decorative traditional-style pillars | Hotels & Resorts Landscape and reception columns",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Grill",
+        "description": "GRC Grills (Glassfiber Reinforced Concrete grills) are lightweight, ornamental ventilation or façade elements made from GRC composite. These are used for decorative purposes, privacy screens, sunshades, and ventilation panels, offering the look of traditional stone or jali (lattice) work while being far lighter, cost-effective, and customizable",
+        "usage": "Residential Villas Staircases, balconies, windows | Temples & Mosques Traditional jali patterns | Hotels & Resorts Partition screens, courtyard accents | Commercial Buildings Façade cladding, service shaft covers",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Frame",
+        "description": "A GRC Frame is a decorative or architectural frame made from Glassfiber Reinforced Concrete (GRC), designed to surround doors, windows, niches, panels, mirrors, or even as façade borders. GRC frames replicate the look of stone, wood, or molded plaster, but with lightweight, durable, and weather-resistant properties.",
+        "usage": "Residential Villas Around windows, entry doors, balcony arches | Hotels & Resorts Mirror frames, lobby wall insets, corridor panels | Temples, Mosques & Churches Carved traditional surrounds and niche frame | Cultural Centers Heritage-style wall framing and ornamentation",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Capital",
+        "description": "A GRC Capital is the top decorative portion of a column or pillar made from Glassfiber Reinforced Concrete (GRC). It crowns the column shaft and enhances the aesthetic appeal and architectural style—from classical (Corinthian, Ionic, Doric) to modern minimalistic forms. GRC allows lightweight, durable, and highly detailed molding, making it ideal for both heritage restorations and contemporary facades.",
+        "usage": "Villas & Bungalows Front porch and balcony columns | Temples & Mosques Religious architecture with classical details | Hotels & Resorts Grand entrance lobbies and pavilions | Government Buildings Heritage facades and porticos",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Cornice",
+        "description": "A GRC Cornice is a decorative horizontal molding that crowns a building or structure, made using Glassfiber Reinforced Concrete (GRC). It is designed to enhance the facade, hide roof joints, and provide visual definition between architectural levels (like rooflines, parapets, and floor bands). GRC allows for lightweight, intricately detailed, weatherproof cornices, replicating traditional stone or plaster styles without the structural burden. Religious domes, minarets, and arches",
+        "usage": "Villas & Bungalows Roof lines, balconies, window tops | Temples, Mosques & Churches Religious domes, minarets, and arches | Hotels & Resorts Elegant facades and porticos",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Baluster",
+        "description": "A GRC Baluster is a decorative and structural element made from Glassfiber Reinforced Concrete, used as the vertical post in a balustrade system (which includes the handrail, base rail, and balusters). GRC balusters offer the classical look of carved stone or wood with lightweight, weather-resistant, and cost-effective advantages.",
+        "usage": "Residential Balconies, staircases, verandahs, terraces | Hotels & Resorts Poolside railings, terrace balustrades | Temples & Mosques Surrounding domes, corridors, and steps | Public Buildings Garden railings, entry porches, gazebos",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Mural",
+        "description": "A GRC Mural is a decorative wall art panel or relief sculpture made from Glassfiber Reinforced Concrete (GRC). These murals are used to enhance aesthetics, convey cultural or thematic messages, and add visual depth to interior or exterior surfaces. GRC allows intricate carving, 3D textures, and large-format designs that are lightweight, weatherproof, and long-lasting",
+        "usage": "Temples & Mosques Mythological or spiritual stories in relief | Hotels & Resorts Nature, tropical, or local cultural scenes | Public Parks Educational or environmental storytelling | Private Villas Custom designs on boundary walls or lounges",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "3D Wall Panel",
+        "description": "A GRC 3D Wall Panel is a textured architectural cladding element made of Glassfiber Reinforced Concrete (GRC), designed to give walls a three-dimensional, sculptural appearance. These panels are used to enhance visual depth, play with shadow and light, and add modern or classic character to both interior and exterior spaces.",
+        "usage": "Building Facades Feature elevation panels or screen walls | Hotel Lobbies & Malls Reception, corridor, or display walls | Residential Interiors Living room, stair wall, bedroom backdrops | Office & Commercial Spaces Brand walls, conference rooms",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "PRECAST CONSTRUCTION",
+    "slug": "precast-construction",
+    "description": "Welcome to the future of construction. Our precast concrete solutions offer a revolutionary approach to building, delivering unparalleled efficiency, quality, and sustainability. Gone are the days of lengthy on-site concrete pouring and curing. With precast, building components are manufactured in a controlled factory environment, then transported and assembled on-site, dramatically accelerating project timelines and enhancing overall structural integrity.",
+    "is_active": true,
+    "product": [
+      {
+        "name": "Column",
+        "description": "A Precast Concrete Column is a vertical structural member manufactured off-site in a controlled factory environment and then transported to the construction site for installation. These columns are widely used in both residential, commercial, industrial, and infrastructure projects due to their speed of construction uniform quality, and high load-bearing capacity",
+        "usage": "Commercial Buildings Columns for multi-story frames | Industrial Sheds Heavy-duty RCC columns with corbels for crane beams | Residential Villas Decorative or structural columns | Bridges & Flyovers Large precast piers or support columns",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Hollow Core Slab",
+        "description": "A Precast Hollow Core Slab (HCS) is a prestressed concrete floor or roof slab with continuous voids (cores) running through its length. These voids reduce the self-weight of the slab, improve structural efficiency, and allow for quick and economical construction of flooring systems in buildings.",
+        "usage": "High-Rise Buildings Floors in residential and commercial towers | Schools / Hospitals Fast installation and durable flooring | Malls & Office Spaces Long spans, flat soffits for easy services | Industrial Buildings Roof and mezzanine slabs",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Wall",
+        "description": "Precast concrete walls are factory-made concrete wall panels used in building construction and infrastructure. These walls are manufactured under controlled conditions, then transported to the site and installed using cranes. They offer a fast, strong, and durable solution for creating partitions, enclosures, or load-bearing elements in various structures.",
+        "usage": "Residential Buildings Interior/exterior walls | Industrial Sheds Wall cladding, partitioning | Commercial Spaces Storefronts, sidewalls | Villas/Plots Compound/boundary walls",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Beam",
+        "description": "A Precast Beam is a concrete structural element that is cast and cured in a controlled factory environment, then transported to the site for installation. It serves as a horizontal support for slabs, walls, and loads, often forming the backbone of precast structural systems like frames, bridges, buildings, and industrial sheds.",
+        "usage": "Multi-story Buildings Floor and roof beams | Factories/Warehouses Supporting heavy slab loads | Bridges & Flyovers PSC I-girders or U-girders",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Slab",
+        "description": "A precast slab is a flat, factory-made concrete element used in building floors, roofs, and decks. It is manufactured off-site under controlled conditions, ensuring high quality and speedier installation at the construction site. Precast slabs can be solid, hollow-core, waffle, or ribbed, and are often used with precast beams and columns for modular construction.",
+        "usage": null,
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Foundation",
+        "description": "A Precast Foundation is a structural base element cast and cured off-site (in a factory) and then transported to the construction location for quick assembly. It serves the same purpose as conventional foundations but offers speed, quality control, and minimal site disruption. Precast foundations are commonly used in modular buildings, warehouses, homes, boundary walls, telecom towers, and temporary structures.",
+        "usage": "Modular Housing Fast setup of house or cabin base | Industrial Equipment foundations, shed supports | Telecom Tower and antenna base | Boundary Wall Precast column bases for fencing",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Pile",
+        "description": "A Precast Pile is a long, slender concrete element that is cast and cured off-site, then driven or inserted into the ground to support structures by transferring loads to deeper, more stable soil layers or bedrock. Precast piles are widely used in bridges, high-rise buildings, industrial sheds, coastal structures, and poor soil conditions where shallow foundations aren't suitable.",
+        "usage": "High-Rise Buildings Deep foundation in urban sites | Bridges & Flyovers Abutments and pier foundations | Industrial Structures Heavy load sheds, equipment foundations | Highways Retaining walls, toll booth platforms",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Retaining Wall",
+        "description": "A Precast Retaining Wall is a structural concrete wall unit manufactured off-site and installed on location to retain soil at different elevations, resist lateral earth pressure, and support sloped terrains, roadways, embankments, and other infrastructure. Compared to cast-in-place walls, precast walls offer faster installation, cleaner construction, and consistent quality.",
+        "usage": "Highways & Railways Embankments, flyover abutments | Infrastructure Projects Bridge approaches, culverts | Residential/Commercial Basement walls, garden terracing | Parks & Landscapes Soil shaping, level creation",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Sandwich Wall",
+        "description": "A Precast Sandwich Wall Panel is a multi-layered concrete wall element composed of two outer concrete layers (\"wythes\") separated by a layer of insulation (typically EPS or PU foam). These panels are manufactured in a factory and used in energy-efficient buildings, offering structural support + thermal insulation + architectural finish all in one.",
+        "usage": "Commercial Buildings Offices, malls, schools | Residential Housing Villas, apartments, modular homes | Industrial Facilities Warehouses, factories, cold storage | Institutional Buildings Universities, auditoriums, etc.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Staircase",
+        "description": "A Precast Staircase is a factory-cast reinforced concrete stair unit that is transported and installed on site. These stairs are engineered for accuracy, speed, and clean finishes, eliminating the need for formwork, shuttering, or on-site curing",
+        "usage": "Commercial Buildings Office towers, malls, airports | Residential Complexes Apartments, duplexes, villas | Industrial Facilities Warehouses, factories, control rooms | Infrastructure Projects Metro stations, stadiums, etc.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Water Tank",
+        "description": "A Precast Water Tank is a ready-made reinforced concrete structure manufactured in controlled factory conditions and transported to the site for installation. It is used for storage of potable or non-potable water, fire reserves, sewage treatment, and rainwater harvesting These tanks can be underground, above ground, or partially buried.",
+        "usage": "Residential Villas, apartment complexes | Commercial Office buildings, malls, hotels | Infrastructure Highways, railway stations | Agriculture Irrigation, animal watering",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "Toilet",
+        "description": "A Precast Toilet is a factory-made, ready-to-install toilet cabin or block made from reinforced concrete (RCC) or GRC/FRP shells with precast RCC base and roof. These units are used to provide quick, hygienic, durable, and permanent sanitation facilities in urban, rural, and infrastructure settings.",
+        "usage": "Single Cubicle (1 User) 1 toilet with door, compact footprint | Double Cubicle (2 Users) Two separate compartments | Toilet + Bath Unit With shower area and basin",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "INTERIOR",
+    "slug": "interior",
+    "description": null,
+    "is_active": true,
+    "product": [
+      {
+        "name": "WALL PANEL",
+        "description": "An Interior Wall Panel is a prefabricated decorative or functional covering used to enhance the aesthetics,insulation, and durability of a wall's surface. They can be made from various materials like wood, MDF, PVC, GRC, metal, gypsum, or fabric, and are installed directly over an existing wall or frame. durable, and permanent sanitation facilities in urban, rural, and infrastructure settings.",
+        "usage": "Living rooms, bedrooms, and hallways. | Office reception and meeting rooms. | Hotels, restaurants, and lounges. | Feature/accent walls for aesthetic focus",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "MURAL",
+        "description": "An Interior Mural is a large-scale artwork or decorative design applied directly to interior walls, ceilings, or panels to create a visually striking focal point.",
+        "usage": "Hotels, resorts, and restaurants. | Office lobbies, conference rooms, and reception areas. | Luxury homes, living rooms, and feature walls. | Retail stores and showrooms for brand storytelling.",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      },
+      {
+        "name": "CORNICE FOR INTERIOR",
+        "description": "An Interior Cornice is a decorative moulding installed where the wall meets the ceiling, adding elegance and architectural detail to a room's interior",
+        "usage": "Living rooms, dining areas, and bedrooms. | Hotel lobbies, banquet halls, and restaurants | Office boardrooms and reception areas | Heritage or classical style interiors",
+        "minimum_quantity": null,
+        "size": null,
+        "price": null,
+        "units": null
+      }
+    ]
+  }
+]

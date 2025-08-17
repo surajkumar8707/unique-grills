@@ -8,7 +8,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\Booking;
+use App\Models\Categories;
 use App\Models\Contact;
+use App\Models\HomePageCarousel;
+use App\Models\Product;
 use App\Models\Setting;
 use App\Models\SocialMediaLink;
 use Illuminate\Support\Facades\Hash;
@@ -18,7 +21,32 @@ class AdminController extends Controller
 {
     public function dashboard()
     {
-        return view('admin.dashboard');
+        $dashboard_data = $this->dashboardData();
+        // dd($dashboard_data);
+        return view('admin.dashboard', compact('dashboard_data'));
+    }
+
+    public function dashboardData()
+    {
+        $categoriesCount = Categories::count();
+        $productsCount = Product::count();
+        $contactsCount = Contact::count();
+        $carouselsCount = HomePageCarousel::count();
+        $categoryNames = Categories::withCount('products')->get()->pluck('name');
+        $productCounts = Categories::withCount('products')->get()->pluck('products_count');
+        // dd($categoryNames->toArray(), $productCounts->toArray());
+
+        return [
+            'categories' => $categoriesCount,
+            'products' => $productsCount,
+            'contacts' => $contactsCount,
+            'carousels' => $carouselsCount,
+            'social_media_links' => SocialMediaLink::count(),
+            'category_chart_product_count' => [
+                'labels' => $categoryNames->toArray(),
+                'data' => $productCounts->toArray() ?: [0, 0, 0, 0, 0],
+            ],
+        ];
     }
 
     public function profile()

@@ -14,14 +14,14 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             AdminSeeder::class,
-            // CustomerSeeder::class,
             ContactSeeder::class,
             HomePageCarouselSeeder::class,
             SettingSeeder::class,
             SocialMediaLinkSeeder::class,
             GallerySeeder::class,
-            CategoriesSeeder::class,
-            ProductSeeder::class,
+            CategoryProductSeeder::class,
+            // CategoriesSeeder::class,
+            // ProductSeeder::class,
         ]);
     }
 }

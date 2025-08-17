@@ -13,20 +13,24 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('slug')->unique();
+            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
+            $table->longText('name');
+            // $table->longText('slug')->unique();
+            $table->longText('slug');
             $table->longText('description')->nullable();
-            $table->decimal('price', 10, 2);
-            $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-            $table->string('image')->nullable();
+            $table->text('usage')->nullable();
+            $table->integer('minimum_quantity')->nullable();
+            $table->longText('size')->nullable();
+            $table->decimal('price', 12, 2)->nullable();
+            $table->longText('units')->nullable();
+            $table->longText('image')->nullable();
             $table->boolean('is_active')->default(true);
             $table->integer('stock')->default(0);
-            $table->string('sku')->unique()->nullable();
-            $table->string('meta_title')->nullable();
-            $table->string('meta_description')->nullable();
-            $table->string('meta_keywords')->nullable();
-            $table->string('meta_image')->nullable();
+            // $table->longText('sku')->unique()->nullable();
+            $table->longText('meta_title')->nullable();
+            $table->longText('meta_description')->nullable();
+            $table->longText('meta_keywords')->nullable();
+            $table->longText('meta_image')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
