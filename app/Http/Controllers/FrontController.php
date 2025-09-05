@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Booking;
 use App\Models\Contact;
 use App\Models\Gallery;
+use App\Models\Project;
 use App\Models\Room;
 use Illuminate\Http\Request;
 
@@ -146,6 +147,13 @@ class FrontController extends Controller
         return view('vision');
     }
 
+    public function projects()
+    {
+        $projects = Project::status(true)->get(); // this is correct usage
+        // dd($projects);
+        return view('projects', compact('projects'));
+    }
+
     public function contactUs()
     {
         return view('contact');
@@ -153,19 +161,22 @@ class FrontController extends Controller
 
     public function saveContactUs(Request $request)
     {
+        // dd($request->toArray());
         $validate = $request->validate([
-            'email' => 'required|email',
+            'name' => 'required',
+            'email' => 'required',
             'phone' => 'nullable',
-            'subject' => 'nullable',
+            'city' => 'nullable',
+            // 'subject' => 'nullable',
             'message' => 'required',
         ]);
 
         $create = [
-            'name' => $request->fname . " " . $request->lname,
+            'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->phone,
             'city' => $request->city,
-            // 'service' => $request->service,
+            // 'subject' => $request->subject,
             'message' => $request->message,
         ];
         $contact = Contact::create($create);

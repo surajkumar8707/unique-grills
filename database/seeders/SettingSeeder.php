@@ -20,7 +20,8 @@ class SettingSeeder extends Seeder
         Setting::create([
             'app_name' => 'Unique Grills Brochure',
             'email' => 'uniquegrills_58@yahoo.com',
-            'whatsapp' => '8707633860',
+            'whatsapp' => '8800495357',
+            'gst' => 'GST452535656565',
             'contact' => '+91 8800495357',
             'address' => 'D-328, MIDC, TTC Industrial Area, Behind Ibis Hotel, Turbhe, Navi Mumbai - 400705',
             'header_image' => "assets/front/images/header.png",

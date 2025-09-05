@@ -131,14 +131,14 @@ class AdminController extends Controller
             'app_name' => 'required|string|max:255',
             // 'email' => 'required|string|email|max:255',
             'email' => ['required', 'string', 'max:255', function ($attribute, $value, $fail) {
-                // Regular expression to check multiple emails separated by commas
                 if (!preg_match('/^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})(\s*,\s*[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})*$/', $value)) {
                     $fail($attribute . ' must be a valid email address or a list of email addresses separated by commas.');
                 }
             }],
             'whatsapp' => 'nullable|string|max:20',
             'contact' => 'nullable|string|max:20',
-            'header_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Example validation for header image
+            'gst' => 'nullable',
+            'header_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
         // updateOrCreate
         try {

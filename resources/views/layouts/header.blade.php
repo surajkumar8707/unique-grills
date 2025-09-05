@@ -26,33 +26,16 @@
                         </a>
 
                     @endforeach
-                    {{-- <a href="#" class="block px-4 py-2 hover:bg-gray-800">Wall Panels</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-800">Breeze Blocks</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-800">Brick Claddings</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-800">Wall Murals</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-800">Wash Basins</a> --}}
                 </div>
             </div>
 
-            <!-- SHOP dropdown -->
-            {{-- <div class="relative group">
-                <a href="#" class="flex items-center text-gray-800 hover:text-gray-600">
-                    SHOP
-                    <span class="material-icons text-sm ml-1">expand_more</span>
-                </a>
-                <div
-                    class="absolute top-full left-0 mt-2 w-48 bg-black text-white shadow-lg opacity-0 invisible transform -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-20">
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-800">Shop Item 1</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-800">Shop Item 2</a>
-                </div>
-            </div> --}}
 
-            <a href="#">DEALERS</a>
+            <a href="{{ route('front.projects') }}">Projects</a>
         </nav>
 
         <div class="flex items-center space-x-4">
-            <span class="material-icons text-gray-800 cursor-pointer">search</span>
-            <span class="material-icons text-gray-800 cursor-pointer">person_outline</span>
+            {{-- <span class="material-icons text-gray-800 cursor-pointer">search</span>
+            <span class="material-icons text-gray-800 cursor-pointer">person_outline</span> --}}
             <a class="border border-gray-800 text-gray-800 px-4 py-2 rounded-full text-sm hover:bg-gray-800 hover:text-white transition"
                 href="{{ route('front.contact') }}">Get In Touch</a>
         </div>

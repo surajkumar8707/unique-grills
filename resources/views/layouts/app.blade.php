@@ -29,8 +29,7 @@
     </main>
     @include('layouts.footer')
     <div class="whatsapp-icon">
-        <img alt="whatsapp icon"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUcxm1ZZ_qN-xJpbGeqOyKlJnMq1993wrv7TzV1OiZGOKp35oX9lbQjGLVZFrZzg1CqDhXjYyqgQx1NneMJcCbuSnvwKV0nfKAj23lcuLaa2LoQyOmVvsOBkcoyxiVaXwyU2pHKJfvSvvqSaaaBGmvyz_oOLehbBqXtNr8VYHDg1waqPUbQMlgcufI2cMGyHSykbPIspaGB3FXsyhAM7bzSiogc9nbmYxHGzGYEHw8qO6gvaK25Oonoj13xQUMiJnDYsF0Q6L8qO97" />
+        <img alt="whatsapp icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUcxm1ZZ_qN-xJpbGeqOyKlJnMq1993wrv7TzV1OiZGOKp35oX9lbQjGLVZFrZzg1CqDhXjYyqgQx1NneMJcCbuSnvwKV0nfKAj23lcuLaa2LoQyOmVvsOBkcoyxiVaXwyU2pHKJfvSvvqSaaaBGmvyz_oOLehbBqXtNr8VYHDg1waqPUbQMlgcufI2cMGyHSykbPIspaGB3FXsyhAM7bzSiogc9nbmYxHGzGYEHw8qO6gvaK25Oonoj13xQUMiJnDYsF0Q6L8qO97" />
     </div>
 
 </body>

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->nullable();
             $table->string('whatsapp')->nullable();
             $table->string('contact')->nullable();
+            $table->string('gst')->nullable();
             $table->string('header_image')->nullable();
             $table->longText('address')->nullable();
             $table->tinyInteger('is_fresh')->default(0);

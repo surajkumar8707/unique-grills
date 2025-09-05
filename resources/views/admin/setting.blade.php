@@ -48,6 +48,15 @@
                             @enderror
                         </div>
 
+                        <div class="form-group mb-3">
+                            <label class="mb-1" for="contact">GST No:</label>
+                            <input type="text" name="gst" class="form-control" placeholder="Enter GST Number"
+                                value="{{ old('gst', $setting->gst ?? '') }}" />
+                            @error('gst')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
                         <button type="submit" class="btn btn-primary my-2">Save</button>
                     </div>
                     <div class="col-md-6">
