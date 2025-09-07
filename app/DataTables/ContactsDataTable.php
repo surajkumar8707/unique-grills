@@ -108,7 +108,6 @@ class ContactsDataTable extends DataTable
             Column::make('email'),
             Column::make('phone'),
             Column::make('city'),
-            Column::make('service'),
             Column::make('message'),
             // Column::make('add your columns'),
             Column::make('created_at'),
