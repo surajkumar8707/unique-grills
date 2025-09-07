@@ -460,9 +460,10 @@ class FrontController extends Controller
     public function showProducts($category, $product)
     {
         // Assuming you have a method to get products by category slug and product slug
+        $countries = \App\Models\Country::get();
         $category = \App\Models\Categories::where('slug', $category)->firstOrFail();
         $product = \App\Models\Product::where('slug', $product)->where('category_id', $category->id)->firstOrFail();
-        return view('products.show', compact('category', 'product'));
+        return view('products.show', compact('countries', 'category', 'product'));
     }
 
     public function showSingleCategories($slug)

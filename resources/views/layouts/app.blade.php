@@ -14,6 +14,7 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="{{ public_asset('assets/front/css/style.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     @stack('styles')
 
 </head>
@@ -31,6 +32,9 @@
     <div class="whatsapp-icon">
         <img alt="whatsapp icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUcxm1ZZ_qN-xJpbGeqOyKlJnMq1993wrv7TzV1OiZGOKp35oX9lbQjGLVZFrZzg1CqDhXjYyqgQx1NneMJcCbuSnvwKV0nfKAj23lcuLaa2LoQyOmVvsOBkcoyxiVaXwyU2pHKJfvSvvqSaaaBGmvyz_oOLehbBqXtNr8VYHDg1waqPUbQMlgcufI2cMGyHSykbPIspaGB3FXsyhAM7bzSiogc9nbmYxHGzGYEHw8qO6gvaK25Oonoj13xQUMiJnDYsF0Q6L8qO97" />
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @include('admin/layout/toastr')
 
 </body>
 

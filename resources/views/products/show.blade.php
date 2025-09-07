@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Categories :: ' . getSettings()->app_name)
+@section('title', 'Product Details :: ' . getSettings()->app_name)
 @section('content')
     <br><br><br><br><br><br><br><br>
     <div class="container">
@@ -144,13 +144,13 @@
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-700">Country</label>
-                                <select name="country"
-                                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800">
+                                <select name="country" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800">
                                     <option value="">-Select-</option>
-                                    <option value="India">India</option>
-                                    <option value="USA">USA</option>
-                                    <option value="UK">UK</option>
-                                    <option value="Canada">Canada</option>
+                                    @forelse ($countries as $country)
+                                        <option value="{{ $country->name }}">{{ $country->name }}</option>
+                                    @empty
+                                        
+                                    @endforelse
                                 </select>
                             </div>
                         </div>
