@@ -30,9 +30,12 @@
                 <div class="md:w-1/2 md:pl-16 mt-8 md:mt-0">
                     {{-- <p class="text-gray-500 text-sm">Serenity to Serendipity</p> --}}
                     <h2 class="text-4xl font-bold mt-2">{{ $product->name }}</h2>
-                    <button class="bg-gray-800 text-white px-6 py-3 rounded-md mt-6 flex items-center">
+                    {{-- <button class="bg-gray-800 text-white px-6 py-3 rounded-md mt-6 flex items-center">
                         ENQUIRE NOW <span class="material-icons text-xl ml-2">arrow_forward</span>
-                    </button>
+                    </button> --}}
+                    <a href="#enquiry-form" class="bg-gray-800 text-white px-6 py-3 rounded-md mt-6 flex_ items-center hover:bg-gray-900 transition">
+                        ENQUIRE NOW <span class="material-icons text-xl ml-2">arrow_forward</span>
+                    </a>
                     <p class="text-gray-600 mt-6 leading-relaxed">
                         {{ $product->name }}
                     </p>
@@ -81,31 +84,104 @@
                     </div>
                 </div>
             </section>
-            {{-- <div class="text-center max-w-4xl mx-auto">
-                <h1 class="text-5xl font-bold mb-6">{{ $product->name }}</h1>
-                <p class="text-gray-600 leading-relaxed">
-                    {{ $product->description ?? 'No description available for this category.' }}
-                </p>
-            </div> --}}
 
-            {{-- <div class="text-center max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
-                @foreach ($category->products as $product)
-                    <div class="bg-white rounded-lg shadow-lg_ p-6">
-                        <img src="{{ public_asset($product->image) }}" alt="{{ $product->name }}"
-                            class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h2 class="text-xl font-semibold mb-2">{{ $product->name }}</h2>
-                        <a href="{{ route('show.products', [$category->slug, $product->slug]) }}"
-                            class="text-gray-500 hover:underline">View Product</a>
-                    </div>
-                @endforeach
-            </div> --}}
+            @include('layouts.aesthetics_and_more')
+
+            <section id="enquiry-form" class="py-20">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold text-center mb-8">PRODUCT ENQUIRY FORM</h2>
+
+                    <form action="{{ route('front.enquiry.store') }}" method="POST"
+                        class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md space-y-6">
+                        @csrf
+
+                        {{-- Name --}}
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">First Name <span
+                                        class="text-red-500">*</span></label>
+                                <input type="text" name="first_name" required
+                                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800"
+                                    placeholder="First Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Last Name</label>
+                                <input type="text" name="last_name"
+                                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800"
+                                    placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        {{-- Email --}}
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800"
+                                placeholder="Enter your email">
+                        </div>
+
+                        {{-- Phone --}}
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Phone <span
+                                    class="text-red-500">*</span></label>
+                            <div class="flex">
+                                <span
+                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">+91</span>
+                                <input type="text" name="phone" required
+                                    class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md border-gray-300 shadow-sm focus:ring-gray-800 focus:border-gray-800"
+                                    placeholder="Enter your phone number">
+                            </div>
+                        </div>
+
+                        {{-- Address --}}
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">City <span
+                                        class="text-red-500">*</span></label>
+                                <input type="text" name="city" required
+                                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800"
+                                    placeholder="Enter your city">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Country</label>
+                                <select name="country"
+                                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800">
+                                    <option value="">-Select-</option>
+                                    <option value="India">India</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Canada">Canada</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        {{-- Message --}}
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Your Message</label>
+                            <textarea name="message" rows="4"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800"
+                                placeholder="Write your enquiry..."></textarea>
+                        </div>
+
+                        {{-- Hidden product reference --}}
+                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                        <input type="hidden" name="category_id" value="{{ $category->id }}">
+
+                        {{-- Submit --}}
+                        <div class="text-center">
+                            <button type="submit"
+                                class="w-full md:w-auto bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         @else
             <br><br><br><br><br><br><br><br>
             <h1 class="text-3xl font-bold text-center">Product Not Found</h1>
             <p class="text-center text-gray-600">The Product you are looking for does not exist or has been removed.</p>
             <br><br><br><br><br>
         @endif
-
-        @include('layouts.aesthetics_and_more')
     </div>
 @endsection

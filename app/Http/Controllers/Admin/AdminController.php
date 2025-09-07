@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\DataTables\ContactsDataTable;
+use App\DataTables\PrductEnquiryDataTable;
 use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -166,6 +167,16 @@ class AdminController extends Controller
             );
 
             return redirect()->route('admin.setting')->with('success', 'Settings updated successfully.');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
+    }
+
+    public function enquiries(PrductEnquiryDataTable $dataTable)
+    {
+        try {
+
+            return $dataTable->render('admin.product_enquiry');
         } catch (\Exception $e) {
             return redirect()->back()->with('error', $e->getMessage());
         }

@@ -16,7 +16,7 @@
 @endsection
 
 @push('scripts')
-    <script>
+    {{-- <script>
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -31,6 +31,6 @@
                 resp.status === 'success' ? toastr.success(resp.message) : toastr.error(resp.message);
             });
         });
-    </script>
+    </script> --}}
     {{ $dataTable->scripts() }}
 @endpush

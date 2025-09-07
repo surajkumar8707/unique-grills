@@ -23,9 +23,9 @@
     @include('layouts.header')
     <main>
         @yield('content')
-        <section class="py-12 text-center">
+        {{-- <section class="py-12 text-center">
             <h2 class="text-xl font-semibold">DISCOVER US ON INSTAGRAM</h2>
-        </section>
+        </section> --}}
     </main>
     @include('layouts.footer')
     <div class="whatsapp-icon">

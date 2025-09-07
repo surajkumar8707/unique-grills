@@ -83,6 +83,13 @@
             </a>
         </li>
 
+        <li class="menu-item {{ isActiveRoute(['admin.enquiries']) }}">
+            <a href="{{ route('admin.enquiries') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-calendar"></i>
+                <div data-i18n="Bookings">Product Enquiries</div>
+            </a>
+        </li>
+
         <li
             class="menu-item {{ isActiveRoute(['admin.home-page-carousel.index', 'admin.home-page-carousel.create', 'admin.home-page-carousel.edit']) }}">
             <a href="{{ route('admin.home-page-carousel.index') }}" class="menu-link">

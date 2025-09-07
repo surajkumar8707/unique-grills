@@ -68,6 +68,7 @@ Route::group(['prefix' => '/', 'as' => 'front.'], function () {
     Route::get('/projects', [\App\Http\Controllers\FrontController::class, 'projects'])->name('projects');
     Route::get('/contact', [\App\Http\Controllers\FrontController::class, 'contactUs'])->name('contact');
     Route::post('/save-contact-us', [\App\Http\Controllers\FrontController::class, 'saveContactUs'])->name('save.contact');
+    Route::post('/save-enquiry', [\App\Http\Controllers\FrontController::class, 'saveEnquiryStore'])->name('enquiry.store');
 });
 
 // Add category/product routes LAST to avoid conflicts

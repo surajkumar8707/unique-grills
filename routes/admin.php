@@ -31,6 +31,7 @@ Route::middleware('role:admin')->group(function () {
     Route::post('/setting-update/{id}', [AdminController::class, 'settingUpdate'])->name('setting.update');
 
     Route::get('/contacts', [AdminController::class, 'contacts'])->name('contacts');
+    Route::get('/enquiries', [AdminController::class, 'enquiries'])->name('enquiries');
     Route::get('/bookings', [AdminController::class, 'bookings'])->name('bookings');
 
     Route::get('/social-media', [AdminController::class, 'socialMedia'])->name('social.media');
@@ -51,7 +52,7 @@ Route::middleware('role:admin')->group(function () {
 
     Route::group(['prefix' => '/ajax', 'as' => 'ajax.'], function () {
         Route::post('/categories/change-status', [CategoriesController::class, 'changeStatus'])->name('categories.change.status');
-        Route::post('/product/change-status', [CategoriesController::class, 'changeStatus'])->name('product.change.status');
-        Route::post('/product/change-status', [ProjectController::class, 'changeStatus'])->name('project.change.status');
+        Route::post('/product/change-status', [ProductController::class, 'changeStatus'])->name('product.change.status');
+        Route::post('/project/change-status', [ProjectController::class, 'changeStatus'])->name('project.change.status');
     });
 });

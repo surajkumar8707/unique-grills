@@ -124,7 +124,7 @@ class ProductDataTable extends DataTable
                         };
                         $.ajax({
                             type: "POST",
-                            url: "' . route('admin.change.status') . '",
+                            url: "' . route('admin.ajax.product.change.status') . '",
                             data: requestData,
                             dataType: "json",
                             success: function(response) {
