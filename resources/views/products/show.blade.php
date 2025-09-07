@@ -6,17 +6,16 @@
         @if (isset($product))
             <section class="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 relative">
-                    <button
+                    {{-- <button
                         class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full z-10">
                         <span class="material-icons">chevron_left</span>
-                    </button>
-                    <img alt="Living room with concrete wall panels" class="w-full rounded-lg"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAakO-teK0NssH_JnDdWY8SVAgyU7uDWp3qAMvsFCRdIi-4dzlVJcgu3_ZQuI2pBTr7MZvPbECVDnwku5EWtb1olySMEInKVQfgXiMT1_v1i5ZX0fhAg231g_zJDM3f_2FtnRTxRDPZQcbNUCwgldzwwdvLiGMKaOjmsxFT0p4bYhbTSRp3fWF0973tM8rDdK4w9-14sBEfAbrFkYeXx8LC-aoRLDXuIeE80vEWKusxxY_TtnWKghRNFOr00pdYbUABpxq1ij8PPA" />
-                    <button
+                    </button> --}}
+                    <img alt="{{ $product->name }}" class="w-full rounded-lg" src="{{ public_asset($product->image) }}"/>
+                    {{-- <button
                         class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full z-10">
                         <span class="material-icons">chevron_right</span>
-                    </button>
-                    <div class="flex space-x-2 mt-4">
+                    </button> --}}
+                    {{-- <div class="flex space-x-2 mt-4">
                         <img alt="Dining area detail" class="w-1/5 rounded-md cursor-pointer border-2 border-gray-800"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeymhQCp4Oot3XB6hYPL0wtu9jsyZp3EpmEpxSMQG3XzF8SaxzTFyipepgPu1MlJ-kfU8eYwvjvE12nFlle2_l6ukoUMcMsGrNPDIr-WIVa4S6NPJ8CxjZr7yOu9XKVspxUC0wmnmR_ENfe5KZ_e8_RraJadGlfTzuMwjnnSdNGgOx3xO4hMB0dKy9VcJc9Ip_cI2BLj6txcCknusZ6WeuiH2L6Dm0ikcRcgtrm3aj7f-kZwHHcRSyq-gxonlPZ5XKvSFR1FgW4g" />
                         <img alt="Kitchen counter with concrete finish" class="w-1/5 rounded-md cursor-pointer"
@@ -25,7 +24,7 @@
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ4qu7w_An39ajW2nu0b08qjFpl0rAW9kUiHXSqC12WGsCxj1SDCWZss5_ZTIp0g1oMpUBTcTG0MQh_NoKvHsUhWK3sr3BEIH9o4F1E815hCn2LUWadJ4vsgctDlTe674_f0rDeBuJT_dNNwQ9I_C0aLL1vrQLorXOLu0G6Tplj30pSMD84aQpljFqLxklTQ82g9_WEAPufbr1TX0x5SnbfsiqmBTPJCvLfafVNkX0ujprPaa35StDwJCDlcq21wfudLSqOVh-uQ" />
                         <img alt="Close-up of wall texture" class="w-1/5 rounded-md cursor-pointer"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN6Lo41BGXBWPXbtJV4tS_RloyyRYImmZ2b2MqrSOOaCYq4ff0KmqsiLzvwCSfbbm2BiZSMDrK2EJybUvKiLQ9mSBaXMEncXQH43XVDSYjKVAyvYk_dauz487k4OUuGpSJTGloV-9TN8vZZGPcHLjKtl2lJLYQ76OaCwKpTiR5VlrsO67UBpj8u50jvX6QNeFGArlIG5oJ7uK_8Ism2sJZDmVQrvc-cvXToTHnmK7306vg9DF18j7Rv7A4BoLLrATZ8r-SaglTuQ" />
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="md:w-1/2 md:pl-16 mt-8 md:mt-0">
                     {{-- <p class="text-gray-500 text-sm">Serenity to Serendipity</p> --}}

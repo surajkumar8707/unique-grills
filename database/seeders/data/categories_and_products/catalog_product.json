@@ -13,6 +13,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/rcc_flower_pots.avif",
         "units": null
       },
       {
@@ -22,6 +23,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/bench.avif",
         "units": null
       },
       {
@@ -31,6 +33,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/hume_pipe.webp",
         "units": null
       },
       {
@@ -40,6 +43,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/dome.avif",
         "units": null
       },
       {
@@ -49,6 +53,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/concrete_blocks.jpg",
         "units": null
       },
       {
@@ -58,6 +63,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/grass_paver.jpeg",
         "units": null
       },
       {
@@ -67,6 +73,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/concrete_hollow_blocks.webp",
         "units": null
       },
       {
@@ -76,6 +83,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/image_not_available.jpg",
         "units": null
       },
       {
@@ -85,6 +93,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/concrete-rcc-tables.webp",
         "units": null
       }
     ]
@@ -103,6 +112,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/grc-pillar-column.jpg",
         "units": null
       },
       {
@@ -112,6 +122,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/image_not_available.jpg",
         "units": null
       },
       {
@@ -121,6 +132,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/window_frame.avif",
         "units": null
       },
       {
@@ -130,6 +142,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/grc_capital.webp",
         "units": null
       },
       {
@@ -139,6 +152,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/grc-cornices.jpg",
         "units": null
       },
       {
@@ -148,6 +162,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/grc-concrete-balusters.jpg",
         "units": null
       },
       {
@@ -157,6 +172,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/image_not_available.jpg",
         "units": null
       },
       {
@@ -166,6 +182,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/grc_3d_wall_panel.jpg",
         "units": null
       }
     ]
@@ -184,6 +201,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/precast-column.webp",
         "units": null
       },
       {
@@ -193,6 +211,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/PRECAST_Hollow_core-slab_.png",
         "units": null
       },
       {
@@ -202,6 +221,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/precast_wall.jpg",
         "units": null
       },
       {
@@ -211,6 +231,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/PRECAST concrete-beams_.jpg",
         "units": null
       },
       {
@@ -220,6 +241,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/PRECAST_SLAB_.jpg",
         "units": null
       },
       {
@@ -229,6 +251,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/PRECAST_FOUNDATION.png",
         "units": null
       },
       {
@@ -238,6 +261,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/image_not_available.jpg",
         "units": null
       },
       {
@@ -247,6 +271,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/PRECAST_Hollow-core-slab.png",
         "units": null
       },
       {
@@ -256,6 +281,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/PRECAST_SANDWICH WALL.jpg",
         "units": null
       },
       {
@@ -265,6 +291,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/PRECAST_CLADING_PANEL.jpg",
         "units": null
       },
       {
@@ -274,6 +301,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/PRECAST_WATER_TANK_.jpg",
         "units": null
       },
       {
@@ -283,6 +311,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/image_not_available.jpg",
         "units": null
       }
     ]
@@ -301,6 +330,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/image_not_available.jpg",
         "units": null
       },
       {
@@ -310,6 +340,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/image_not_available.jpg",
         "units": null
       },
       {
@@ -319,6 +350,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
+        "image": "assets/front/images/products/CORNICE.jpg",
         "units": null
       }
     ]

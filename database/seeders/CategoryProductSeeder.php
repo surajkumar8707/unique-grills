@@ -25,7 +25,6 @@ class CategoryProductSeeder extends Seeder
                 'is_active' => $category['is_active'] ?? null,
             ]);
             foreach ($category['product'] as $product) {
-                $default_image = "assets/front/images/image_not_available.jpg";
                 $product = \App\Models\Product::create([
                     'category_id' => $category['id'],
                     'name' => $product['name'],
@@ -35,7 +34,8 @@ class CategoryProductSeeder extends Seeder
                     'minimum_quantity' => $product['minimum_quantity'] ?? 5,
                     'size' => $product['size'] ?? null,
                     'price' => $product['price'] ?? 0,
-                    'image' => $default_image,
+                    // 'image' => "assets/front/images/products/rcc_flower_pots.avif",
+                    'image' => $product['image'],
                     'is_active' => $product['is_active'] ?? 1,
                     'stock' => $product['stock'] ?? 10,
                     // 'sku' => $product['sku'] ?? null,
