@@ -1,25 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Home Page')
 @section('content')
-    {{-- <section class="relative h-screen flex items-center justify-center text-white hero-section">
-            <div class="absolute inset-0 bg-black opacity-30"></div>
-            <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
-                <button class="text-white">
-                    <span class="material-icons text-4xl">chevron_left</span>
-                </button>
-            </div>
-            <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
-                <button class="text-white">
-                    <span class="material-icons text-4xl">chevron_right</span>
-                </button>
-            </div>
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                <span class="w-2 h-2 bg-white rounded-full"></span>
-                <span class="w-2 h-2 bg-white rounded-full opacity-50"></span>
-                <span class="w-2 h-2 bg-white rounded-full opacity-50"></span>
-                <span class="w-2 h-2 bg-white rounded-full opacity-50"></span>
-            </div>
-        </section> --}}
     <section class="py-24 bg-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-8">
             <div class="relative flex items-center justify-center">

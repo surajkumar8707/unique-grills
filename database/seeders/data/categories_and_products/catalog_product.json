@@ -83,7 +83,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
-        "image": "assets/front/images/image_not_available.jpg",
+        "image": "assets/front/images/products/interlocking_brick.jpg",
         "units": null
       },
       {
@@ -122,7 +122,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
-        "image": "assets/front/images/image_not_available.jpg",
+        "image": "assets/front/images/products/grc_grill.jpg",
         "units": null
       },
       {
@@ -172,7 +172,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
-        "image": "assets/front/images/image_not_available.jpg",
+        "image": "assets/front/images/products/grc_mural.jpg",
         "units": null
       },
       {
@@ -330,7 +330,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
-        "image": "assets/front/images/image_not_available.jpg",
+        "image": "assets/front/images/products/interior_wall_pane.jpg",
         "units": null
       },
       {
@@ -340,7 +340,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
-        "image": "assets/front/images/image_not_available.jpg",
+        "image": "assets/front/images/products/interior_mural.jpg",
         "units": null
       },
       {
