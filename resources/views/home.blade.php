@@ -3,7 +3,26 @@
 @section('content')
     <section class="py-24 bg-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-8">
-            <div class="relative flex items-center justify-center">
+            <!-- LEFT CONTENT -->
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight text-gray-800">
+                    EXPOSED CONCRETE AT YOUR CONVENIENCE.
+                </h1>
+                <p class="mt-4 text-gray-600 text-base md:text-lg">
+                    Just when you thought concrete is all about grey, static, ponderous, one-dimensional...
+                </p>
+                <a href="#"
+                    class="mt-6 inline-block bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition">
+                    Learn More
+                </a>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="flex justify-center md:justify-end">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZslDBVSwFFO_avh_UNIbTyRzpOoUWXwiKbTO6wfGGhw4oaYmIJEK0OXVP2RVcAKN3cwHgWVNXFdoN_B_vFlL8rghB7LrB0epYrvtOOPLc6ta6Ghq2ved5Lpwng8IrZjYxWu9lsQ0jzgbWUGImb6hsj7DB3Buqj0eWnUjtfKV9pIokHTweEEEErb_wpvCqb6o0OaC8OFSsAVZ3hVu3G_M-hXpti3mElLgwtp9zQ1yh0Fg9Ha2Yj4cicB5HP3CV2Xtctn966ddPWYXR" alt="Hero"
+                    class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain rounded-xl shadow-lg">
+            </div>
+            {{-- <div class="relative flex items-center justify-center">
                 <div class="relative w-72 h-80 z-10">
                     <img alt="Interior with a brown sofa" class="rounded-3xl object-cover w-full h-full shadow-lg"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZslDBVSwFFO_avh_UNIbTyRzpOoUWXwiKbTO6wfGGhw4oaYmIJEK0OXVP2RVcAKN3cwHgWVNXFdoN_B_vFlL8rghB7LrB0epYrvtOOPLc6ta6Ghq2ved5Lpwng8IrZjYxWu9lsQ0jzgbWUGImb6hsj7DB3Buqj0eWnUjtfKV9pIokHTweEEEErb_wpvCqb6o0OaC8OFSsAVZ3hVu3G_M-hXpti3mElLgwtp9zQ1yh0Fg9Ha2Yj4cicB5HP3CV2Xtctn966ddPWYXR"
@@ -25,7 +44,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="text-brown-700">
                 <h2 class="text-4xl font-semibold mb-6">EXPOSED CONCRETE AT YOUR CONVENIENCE.</h2>
                 <p class="mb-4 text-sm leading-relaxed">
@@ -90,7 +109,8 @@
                 <div class="bg-white p-6 rounded-lg shadow-md relative">
                     <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
                     <p class="mt-12 text-sm text-gray-600 leading-relaxed">
-                        “We are extremely happy with the products from {{ getSettings()->app_name }}. The quality of products is
+                        “We are extremely happy with the products from {{ getSettings()->app_name }}. The quality of
+                        products is
                         excellent and we love the raw and rustic feel that it gives to our space.”
                     </p>
                     <p class="mt-4 font-semibold text-sm">Hetal Shah</p>
@@ -99,7 +119,8 @@
                 <div class="bg-white p-6 rounded-lg shadow-md relative">
                     <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
                     <p class="mt-12 text-sm text-gray-600 leading-relaxed">
-                        “{{ getSettings()->app_name }} has a very good collection of products and the quality is amazing. We used
+                        “{{ getSettings()->app_name }} has a very good collection of products and the quality is amazing. We
+                        used
                         their brick claddings for our project and we are really happy with the outcome.”
                     </p>
                     <p class="mt-4 font-semibold text-sm">Rajesh Kumar</p>
@@ -135,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="py-12 bg-gray-50">
+    {{-- <section class="py-12 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="flex justify-center items-center space-x-8">
                 <img alt="Certification logo 1" class="h-16"
@@ -154,5 +175,27 @@
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAntuguNUjs3AtW9LorFCqDZHWVVlQ4Dut145Wd6hgA3BvJaUGmSD9jI4whnYRSss13tMpGn4e5L2wQtWGdCv4hBVUoMug3QC_z6X2JlA1icYHzNSBv-Oi7WXmckx-FYYIZ1HDo3SmoyniimOxAQPa9X8H4DtKlWkDF-prX19DxRropHKTK3aIGUIsNg0lhZiC3cqyW3AbY-QKS-GjVj78Co0Ug15ER__QA8tCOsjHfqSrH5kR9nh_JSrjOCv6CSHO-mAe5yFUD6zM" />
             </div>
         </div>
+    </section> --}}
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center justify-items-center">
+                <img alt="Certification logo 1" class="h-16 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWJz9PHqDnHMiQFcA1-Aj8sY0e0jpjEvhushjEjmrikcvd-JEcIcXZ0BC8HpL2TJ-AxsMSy6Ydxj3PK0sz41ISpvi5E0K1AvV3k_7y4VEAXIjhlDQHVVDXRNd8FvHrVrU8Rs66DQbSFdCLaRfLdwoIPpwOlxzdmntoeA3mqzccoLGfJhB1C6D8r4KTarkmwX_E8RCU36pi0ff3VmU9UDFwrKg6HtwFSYT84brSr-Ba29JPSyfM9yGCXdHZDy2txbudNCrYgeb2ZbE">
+                <img alt="Certification logo 2" class="h-16 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOvXeLXHpBkwDdvQvaIbJOQqnbzTrshNWQjsZTRCE9m_5uBeKCAhK6JwWSioIdizUgFkGu46qWafz6pA8CqpUz3gAnLsuvpuT4wjbBPNcChWX0EipRwRha9uDZJtEN0PC5mSGPbw6zsUL61XhAllj7SIefvcIVsouW2YPafBjHOuISJfaXg0NKuqZjhdOnwY5gsj1F9MIaKVXTazf6Dk70R4okqkrdwh9loMkucs56W3z79ox7-jlSUYRvgIW5qCxhXFKHHcqEz6w">
+                <img alt="Certification logo 3" class="h-16 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_RkhoH_TMrMcuG2ZPDjvTN8M_FF3A6mEXypiZJibmvoYGU9e50XCS5hD7PVsHkEmpr6pv_iqi-HMoBz9wRF-mZPjVsQZtoJ87T_Ny5meXAadCoK4tcTnkNkZeasEVOb8o7215m69NdtJ1KSxMLsbmLrpfbwtc6T_Bb0_jhOPwm7rQ5d4x9WJs8whUbbfV9dSLkDKfDKrOFUBj5xdddMla0dJ1spkK87bp7AVNMTyydglTUga3wp2PNTSPjPM21iiyPOtiIb52YcY">
+                <img alt="Certification logo 4" class="h-16 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVTM7WScEPG_0YnE-0PzvmXRpwcs7g6SACO4B82kwl4yJi61jIWAXtGa0xOzsTphscUX8EjdkSRjiAFGRDR2QR3P5MwbB2VHhCsf4HS1_qvh5o7RLHZ_3vvQBWY5jNYTYwj3HpN7k9HIgOikriepYDrs9JMe_QYUh3Kflbnf1eGAoidW8Yul-SVySiPb5TvQX6pFgBSlxt_p7cV7MJbGg1b2VpOPA5bLWmRpQBu_croyTfwAQE7s8aq-yLJwEOK-ritRkjXu4aub4">
+                <img alt="Certification logo 5" class="h-16 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI_qe81-sZ66cwWVUwK54xp6KgLsEMcHlP3QarOIR8f3n2eqVfOp43cwh2gEseHaKkH7A72kJYacK_rKj8Xw0SDWMar_8ZZZAoJsaZ65v9RmCS3qWUZrQoEXE0FlfEacfL-GCbU9aZOrSn3AMz76p5xn1KHjWAc9_NDgqsTwW8l0EWtI6ZBT6dwx34C32knLVFn3Zi977HWzu0SnjaKhFl6eYRK31al4apBV8OlN6D8rRsl3C0vcWHCpvHmSyuDzZTSMCVQ3NQfYE">
+                <img alt="Certification logo 6" class="h-16 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBSJTfMoCb7MyFnCAyCTkgHxTQFWBfaF1YDrLrh80YdRiwk1Yag5c2Z3s5oWVUC0mHAK35SnuqxQpVXn8MYy912exp8i7LUhiNcmoLtcT_FNGHC3mbeZw4nL5oEP-xMQhmeITmeiJiAD9Jtuu0JJaVNMqwcmsM64WlAPiacvSw7lRZZ_RKNE-6k5ClTyHk-PL5RdindxSPZHK4AEMqkNwIZGMwfMpfwXqvxOPVNXMrdZqnwHQ1W4vbnXSjE7ZvFpsmQyRzLRqO_Oc">
+                <img alt="Certification logo 7" class="h-16 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAntuguNUjs3AtW9LorFCqDZHWVVlQ4Dut145Wd6hgA3BvJaUGmSD9jI4whnYRSss13tMpGn4e5L2wQtWGdCv4hBVUoMug3QC_z6X2JlA1icYHzNSBv-Oi7WXmckx-FYYIZ1HDo3SmoyniimOxAQPa9X8H4DtKlWkDF-prX19DxRropHKTK3aIGUIsNg0lhZiC3cqyW3AbY-QKS-GjVj78Co0Ug15ER__QA8tCOsjHfqSrH5kR9nh_JSrjOCv6CSHO-mAe5yFUD6zM">
+            </div>
+        </div>
     </section>
+
 @endsection
