@@ -261,7 +261,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
-        "image": "assets/front/images/image_not_available.jpg",
+        "image": "assets/front/images/products/PRECAST_PILE.jpg",
         "units": null
       },
       {
@@ -311,7 +311,7 @@
         "minimum_quantity": null,
         "size": null,
         "price": null,
-        "image": "assets/front/images/image_not_available.jpg",
+        "image": "assets/front/images/products/PRECAST_TOILET.jpg",
         "units": null
       }
     ]
