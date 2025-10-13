@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\{Booking, Contact, Gallery, ProductEnquiry, Project, Room};
+use App\Mail\ProductEnquiryMail;
+use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
@@ -195,7 +197,32 @@ class FrontController extends Controller
                 'product_id' => 'required|exists:products,id',
                 'category_id' => 'required|exists:categories,id',
             ]);
-            ProductEnquiry::create($validated);
+
+            $enquiry = ProductEnquiry::create($validated);
+
+            // Prepare data for mail
+            $mailData = [
+                'first_name' => $enquiry->first_name,
+                'last_name'  => $enquiry->last_name,
+                'email'      => $enquiry->email,
+                'phone'      => $enquiry->phone,
+                'city'       => $enquiry->city,
+                'country'    => $enquiry->country,
+                'message'    => $enquiry->message,
+                'product_name' => $enquiry->product->name ?? '',
+                'category_name' => $enquiry->category->name ?? '',
+            ];
+
+            $admin_email = env('MAIL_FROM_ADDRESS');
+            if(empty($admin_email)){
+                $admin_email = env('MAIL_FROM_ADDRESS');
+            }
+            Mail::to($admin_email)->send(new ProductEnquiryMail($mailData));
+
+            if (!empty($enquiry->email)) {
+                Mail::to($enquiry->email)->send(new ProductEnquiryMail($mailData));
+            }
+
             return redirect()->back()->with('success', 'Your enquiry has been submitted successfully!');
         } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Error :'. $e->getMessage());

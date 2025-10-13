@@ -21,8 +21,8 @@ class SocialMediaLinkSeeder extends Seeder
             'youTube' => 'https://www.youtube.com/',
             'youTube_show' => true,
 
-            'instagram' => 'https://www.instagram.com/',
-            'instagram_show' => false,
+            'instagram' => 'https://www.instagram.com/uniquegrills_precast/',
+            'instagram_show' => true,
 
             'facebook' => 'https://www.facebook.com/',
             'facebook_show' => true,
