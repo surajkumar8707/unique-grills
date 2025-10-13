@@ -14,6 +14,23 @@
     @enderror
 </div>
 
+<div class="mb-3">
+    <label>Category Image</label>
+    <input type="file" name="photo" class="form-control" accept="image/*">
+    @error('photo')
+        <small class="text-danger">{{ $message }}</small>
+    @enderror
+</div>
+
+{{-- Show preview if editing and image exists --}}
+@if (isset($category) && $category->photo)
+    <div class="mb-3">
+        <label>{{ $category->photo }}Current Image:</label><br>
+        <img src="{{ public_asset($category->photo) }}" alt="Category Image" width="150">
+    </div>
+@endif
+
+
 <div class="form-check mb-3">
     <input type="checkbox" name="is_active" value="1" class="form-check-input" id="is_active"
         {{ old('is_active', @$category && @$category->is_active ? 'checked' : '') }}>

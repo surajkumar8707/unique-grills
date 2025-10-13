@@ -22,7 +22,7 @@
                             </ul>
                         </div>
                     @endif
-                    <form action="{{ route('admin.categories.store') }}" method="POST">
+                    <form action="{{ route('admin.categories.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @include('admin.categories.partials.form')
                         <button type="submit" class="btn btn-primary">Save</button>

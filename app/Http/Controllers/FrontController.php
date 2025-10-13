@@ -13,10 +13,12 @@ class FrontController extends Controller
     {
         $sliders = getAllSlider(1);
         $galleries = Gallery::where('status', 1)->take(3)->get();
+        $projects = Project::status(true)->get();
+        $categories = getCategories();
         // dd($galleries->toArray());
         // dd($sliders->toArray());
         // return view('home', compact('sliders', 'galleries'));
-        return view('home', compact('sliders', 'galleries'));
+        return view('home', compact('sliders', 'galleries', 'projects', 'categories'));
     }
 
     public function roomDetailPage($id)

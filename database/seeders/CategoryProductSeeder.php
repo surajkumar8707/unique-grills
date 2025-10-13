@@ -21,6 +21,7 @@ class CategoryProductSeeder extends Seeder
                 'id' => $category['id'],
                 'name' => $category['name'],
                 'slug' => $category['slug'],
+                'photo' => $category['photo'],
                 'description' => $category['description'] ?? null,
                 'is_active' => $category['is_active'] ?? null,
             ]);
