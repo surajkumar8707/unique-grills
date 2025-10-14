@@ -6,7 +6,7 @@
             <!-- LEFT CONTENT -->
             <div class="text-center md:text-left">
                 <h1 class="text-3xl md:text-5xl font-bold leading-tight text-gray-800">
-                    EXPOSED CONCRETE AT YOUR CONVENIENCE.
+                    Shaping the future with Precast excellance
                 </h1>
                 <p class="mt-4 text-gray-600 text-base md:text-lg">
                     Just when you thought concrete is all about grey, static, ponderous, one-dimensional...
@@ -19,7 +19,7 @@
 
             <!-- RIGHT IMAGE -->
             <div class="flex justify-center md:justify-end">
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZslDBVSwFFO_avh_UNIbTyRzpOoUWXwiKbTO6wfGGhw4oaYmIJEK0OXVP2RVcAKN3cwHgWVNXFdoN_B_vFlL8rghB7LrB0epYrvtOOPLc6ta6Ghq2ved5Lpwng8IrZjYxWu9lsQ0jzgbWUGImb6hsj7DB3Buqj0eWnUjtfKV9pIokHTweEEEErb_wpvCqb6o0OaC8OFSsAVZ3hVu3G_M-hXpti3mElLgwtp9zQ1yh0Fg9Ha2Yj4cicB5HP3CV2Xtctn966ddPWYXR"
+                <img src="{{ public_asset('assets/front/images/home.jpg') }}"
                     alt="Hero"
                     class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain rounded-xl shadow-lg">
             </div>
