@@ -66,7 +66,7 @@
     <label>Image</label>
     <input type="file" name="image" class="form-control">
     @if (isset($product) && $product->image)
-        <img src="{{ public_asset('storage/' . $product->image) }}" class="mt-2" width="100">
+        <img src="{{ public_asset($product->image) }}" class="mt-2" width="100">
     @endif
     @error('image')
         <small class="text-danger">{{ $message }}</small>
@@ -78,24 +78,27 @@
 
 <div class="mb-3">
     <label>Meta Title</label>
-    <input type="text" name="meta_title" class="form-control" value="{{ old('meta_title', $product->meta_title ?? '') }}">
+    <input type="text" name="meta_title" class="form-control"
+        value="{{ old('meta_title', $product->meta_title ?? '') }}">
 </div>
 
 <div class="mb-3">
     <label>Meta Description</label>
-    <input type="text" name="meta_description" class="form-control" value="{{ old('meta_description', $product->meta_description ?? '') }}">
+    <input type="text" name="meta_description" class="form-control"
+        value="{{ old('meta_description', $product->meta_description ?? '') }}">
 </div>
 
 <div class="mb-3">
     <label>Meta Keywords</label>
-    <input type="text" name="meta_keywords" class="form-control" value="{{ old('meta_keywords', $product->meta_keywords ?? '') }}">
+    <input type="text" name="meta_keywords" class="form-control"
+        value="{{ old('meta_keywords', $product->meta_keywords ?? '') }}">
 </div>
 
 <div class="mb-3">
     <label>Meta Image</label>
     <input type="file" name="meta_image" class="form-control">
-    @if(isset($product) && $product->meta_image)
-        <img src="{{ public_asset('storage/' . $product->meta_image) }}" class="mt-2" width="100">
+    @if (isset($product) && $product->meta_image)
+        <img src="{{ public_asset($product->meta_image) }}" class="mt-2" width="100">
     @endif
 </div>
 
