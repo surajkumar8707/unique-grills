@@ -15,16 +15,31 @@ use Symfony\Component\Process\Process;
 */
 
 // Route to perform 'git pull' operation
+Route::get('/migrate-fresh', function () {
+    try {
+        $process = new Process(['php', 'artisan', 'migrate:fresh', '--seed']);
+        $process->run();
+
+        if (!$process->isSuccessful()) {
+            return response("<pre>Migration Error:\n" . $process->getErrorOutput() . "</pre>", 500);
+        }
+
+        return response("<pre>Migration Output:\n" . $process->getOutput() . "</pre>", 200);
+    } catch (\Throwable $e) {
+        return response("<pre>Exception: " . $e->getMessage() . "</pre>", 500);
+    }
+});
+
 Route::get('/git-pull', function () {
     try {
         $process = new Process(['git', 'pull', 'origin', 'main']);
         $process->run();
 
         if (!$process->isSuccessful()) {
-            return response("<pre>Error: " . $process->getErrorOutput() . "</pre>", 500);
+            return response("<pre>Git Pull Error:\n" . $process->getErrorOutput() . "</pre>", 500);
         }
 
-        return response("<pre>" . $process->getOutput() . "</pre>", 200);
+        return response("<pre>Git Pull Output:\n" . $process->getOutput() . "</pre>", 200);
     } catch (\Throwable $e) {
         return response("<pre>Exception: " . $e->getMessage() . "</pre>", 500);
     }
