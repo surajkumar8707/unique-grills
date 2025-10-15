@@ -14,6 +14,7 @@ use Symfony\Component\Process\Process;
 |
 */
 
+// Route to perform 'git pull' operation
 Route::get('/git-pull', function () {
     try {
         $process = new Process(['git', 'pull', 'origin', 'main']);
