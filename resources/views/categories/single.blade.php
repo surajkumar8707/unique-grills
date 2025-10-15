@@ -18,7 +18,7 @@
     <div class="container">
         @if (isset($category))
             <div class="text-center max-w-4xl mx-auto">
-                <h1 class="text-5xl font-bold mb-6">{{ $category->slug }} {{ $category->name }}</h1>
+                <h1 class="text-5xl font-bold mb-6">{{ $category->name }}</h1>
                 <p class="text-gray-600 leading-relaxed">
                     {{ $category->description ?? 'No description available for this category.' }}
                 </p>
