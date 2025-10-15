@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\{Categories, HomePageCarousel, Setting, SocialMediaLink};
+use App\Models\{Categories, ClientFeedback, HomePageCarousel, Setting, SocialMediaLink};
 
 if (!function_exists('getSettings')) {
     function getSettings()
@@ -14,6 +14,13 @@ if (!function_exists('getCategories')) {
     function getCategories()
     {
         return Categories::with('products')->active()->get();
+    }
+}
+
+if (!function_exists('getClientFeedback')) {
+    function getClientFeedback()
+    {
+        return ClientFeedback::get();
     }
 }
 

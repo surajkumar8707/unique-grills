@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Auth\LoginController;
-use App\Http\Controllers\Admin\{AdminController, CustomerController, HomePageCarouselController, CategoriesController, ProductController, ProjectController};
+use App\Http\Controllers\Admin\{AdminController, CustomerController, HomePageCarouselController, CategoriesController, ClientFeedbackController, ProductController, ProjectController};
 /*
 |--------------------------------------------------------------------------
 | Admin Routes
@@ -48,6 +48,7 @@ Route::middleware('role:admin')->group(function () {
     Route::resource('categories', CategoriesController::class);
     Route::resource('product', ProductController::class);
     Route::resource('project', ProjectController::class);
+    Route::resource('client-feedback', ClientFeedbackController::class);
     Route::post('/change-status', [HomePageCarouselController::class, 'changeStatus'])->name('change.status');
 
     Route::group(['prefix' => '/ajax', 'as' => 'ajax.'], function () {

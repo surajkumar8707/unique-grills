@@ -15,10 +15,8 @@ class FrontController extends Controller
         $galleries = Gallery::where('status', 1)->take(3)->get();
         $projects = Project::status(true)->get();
         $categories = getCategories();
-        // dd($galleries->toArray());
-        // dd($sliders->toArray());
-        // return view('home', compact('sliders', 'galleries'));
-        return view('home', compact('sliders', 'galleries', 'projects', 'categories'));
+        $client_feedbacks = getClientFeedback();
+        return view('home', compact('sliders', 'galleries', 'projects', 'categories', 'client_feedbacks'));
     }
 
     public function roomDetailPage($id)
@@ -55,7 +53,8 @@ class FrontController extends Controller
 
     public function aboutUs()
     {
-        return view('about');
+        $client_feedbacks = getClientFeedback();
+        return view('about', compact('client_feedbacks'));
     }
 
     public function faqs()
@@ -216,7 +215,7 @@ class FrontController extends Controller
             ];
 
             $admin_email = env('MAIL_FROM_ADDRESS');
-            if(empty($admin_email)){
+            if (empty($admin_email)) {
                 $admin_email = env('MAIL_FROM_ADDRESS');
             }
             Mail::to($admin_email)->send(new ProductEnquiryMail($mailData));
@@ -227,7 +226,7 @@ class FrontController extends Controller
 
             return redirect()->back()->with('success', 'Your enquiry has been submitted successfully!');
         } catch (\Exception $e) {
-            return redirect()->back()->with('error', 'Error :'. $e->getMessage());
+            return redirect()->back()->with('error', 'Error :' . $e->getMessage());
         }
     }
     // public function saveEnquiryStore(Request $request){

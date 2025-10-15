@@ -2,8 +2,7 @@
     <div class="container mx-auto px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
-                <h3 class="text-xl font-semibold mb-4 tracking-wider">SPECIALIZED CONCRETE FOR INTERIOR DESIGN AND
-                    FACADE</h3>
+                <h3 class="text-xl font-semibold mb-4 tracking-wider">SPECIALIZED IN CONCRETE, RCC AND GRC PRODUCTS</h3>
             </div>
             <div>
                 <h4 class="font-semibold mb-4 text-gray-400">COLLECTIONS</h4>
@@ -51,6 +50,48 @@
                     unsubscribe anytime.</p>
                 <h4 class="font-semibold mb-4 text-gray-400">FOLLOW US</h4>
                 <div class="flex space-x-3 mb-6">
+                    @if ($social['facebook_show'])
+                        <a class="border border-white rounded-full p-2 hover:bg-white hover:text-gray-800 transition"
+                            href="{{ $social['facebook'] }}" target="_blank" rel="noopener noreferrer">
+                            <img alt="facebook icon" class="filter invert-0 hover:invert"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpPsqkWtsScajDKGX4TrugpXNsK_fYYdYQc9kPaX-jy6fRp4vT8B77cp80FtFH0E_jbA8B7e_BHG_CFzHLSx_N5Q2sqvDcOyyyz9QJxSQm6dzjp4JZZlEdMk-GqZyu86cqHhabqvPMHSEvlUqzveDMtVtw2iQRgI432asWm8LGi6ywrMqYcZP91vhhu0DCKsaY4itIZtQ4I3JACsycaIVFL9qywwwlMX866dkN2bXESdIufYtWc4BPp2SM6dHAUoA7PGXfQygGxSgj" />
+                        </a>
+                    @endif
+
+                    @if ($social['instagram_show'])
+                        <a class="border border-white rounded-full p-2 hover:bg-white hover:text-gray-800 transition"
+                            href="{{ $social['instagram'] }}" target="_blank" rel="noopener noreferrer">
+                            <img alt="instagram icon" class="filter invert-0 hover:invert"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCed-YCF2N2-_eC5JM-Bsy8p3wD2TvpFT9bM-ZKXeZGCkkg0QO0ZJygXt3hgi72sTQQcP2PvZbFWiop5m5IPqkEkkIlGTAV485rDKPpl_xBcZF0yV4BmbHVDEeisfyq94_v_7B_5ZQNPfkeQP_Pq0G3YYHVZ0PLbjd3vO97Qo_z6-m5gvrF3YnigCMfLfcXJLxCb8uAxEG4aSWN06n-Q2oisUhxpbIC__rLiWn5m6HYTFqynR_eWn8BhgbTdxWQhs1oLRGQ4cvDAnKT" />
+                        </a>
+                    @endif
+
+                    @if ($social['linkedin_show'])
+                        <a class="border border-white rounded-full p-2 hover:bg-white hover:text-gray-800 transition"
+                            href="{{ $social['linkedin'] }}" target="_blank" rel="noopener noreferrer">
+                            <img alt="linkedin icon" class="filter invert-0 hover:invert"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ_uvjPwqhZzuqspXHZ2VRxMsjMWFrnXlBdSer4chjc1sTV20LX7VvkbEgYs4HPoczUHco-QlpamqbCayrP-R24kPUw3aSBpfrFPxQUdReqkSR5orrgioqJ8oVticFU4bFiy6o7gXioCuXRsnywFcI8zuREA1JNLDzDwEsitqGGtYNJBQwOKi53j2xOxaVjpUI4VMwE376WZEu0kEDJ02dtprQ3NX_bR4FxIdGVwi2XuZsC9RP7msz9CcdZffdHODTCWN5CKRlgEv5" />
+                        </a>
+                    @endif
+
+                    @if ($social['twitter_show'])
+                        <a class="border border-white rounded-full p-2 hover:bg-white hover:text-gray-800 transition"
+                            href="{{ $social['twitter'] }}" target="_blank" rel="noopener noreferrer">
+                            <img alt="twitter icon" class="filter invert-0 hover:invert"
+                                src="https://images.freeimages.com/image/large-previews/f35/x-twitter-logo-on-black-circle-5694247.png?h=350" />
+                        </a>
+                    @endif
+
+                    @if ($social['youTube_show'])
+                        <a class="border border-white rounded-full p-2 hover:bg-white hover:text-gray-800 transition"
+                            href="{{ $social['youTube'] }}" target="_blank" rel="noopener noreferrer">
+                            <img alt="youtube icon" class="filter invert-0 hover:invert"
+                                src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" />
+                        </a>
+                    @endif
+                </div>
+
+                {{-- <div class="flex space-x-3 mb-6">
                     <a class="border border-white rounded-full p-2 hover:bg-white hover:text-gray-800 transition"
                         href="#"><img alt="facebook icon" class="filter invert-0 hover:invert"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpPsqkWtsScajDKGX4TrugpXNsK_fYYdYQc9kPaX-jy6fRp4vT8B77cp80FtFH0E_jbA8B7e_BHG_CFzHLSx_N5Q2sqvDcOyyyz9QJxSQm6dzjp4JZZlEdMk-GqZyu86cqHhabqvPMHSEvlUqzveDMtVtw2iQRgI432asWm8LGi6ywrMqYcZP91vhhu0DCKsaY4itIZtQ4I3JACsycaIVFL9qywwwlMX866dkN2bXESdIufYtWc4BPp2SM6dHAUoA7PGXfQygGxSgj" /></a>
@@ -63,9 +104,10 @@
                     <a class="border border-white rounded-full p-2 hover:bg-white hover:text-gray-800 transition"
                         href="#"><img alt="linkedin icon" class="filter invert-0 hover:invert"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ_uvjPwqhZzuqspXHZ2VRxMsjMWFrnXlBdSer4chjc1sTV20LX7VvkbEgYs4HPoczUHco-QlpamqbCayrP-R24kPUw3aSBpfrFPxQUdReqkSR5orrgioqJ8oVticFU4bFiy6o7gXioCuXRsnywFcI8zuREA1JNLDzDwEsitqGGtYNJBQwOKi53j2xOxaVjpUI4VMwE376WZEu0kEDJ02dtprQ3NX_bR4FxIdGVwi2XuZsC9RP7msz9CcdZffdHODTCWN5CKRlgEv5" /></a>
-                </div>
+                </div> --}}
                 <a class="inline-block border border-white px-6 py-3 text-sm font-semibold hover:bg-white hover:text-gray-800 transition"
-                    href="#">DOWNLOAD CATALOGUES</a>
+                    href="{{ public_asset('assets/front/documents/pdf/unique-grills-brochure.pdf') }}"
+                    download="unique-grills-brochure.pdf">DOWNLOAD CATALOGUES</a>
             </div>
         </div>
         <div class="border-t border-gray-700 pt-6 mt-6 flex justify-between items-center text-xs text-gray-400">

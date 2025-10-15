@@ -98,6 +98,14 @@
             </a>
         </li>
 
+        <li
+            class="menu-item {{ isActiveRoute(['admin.client-feedback.index', 'admin.client-feedback.create', 'admin.client-feedback.edit']) }}">
+            <a href="{{ route('admin.client-feedback.index') }}" class="menu-link">
+                <i class='menu-icon tf-icons bx bxs-carousel'></i>
+                <div data-i18n="Analytics">Client Feedback</div>
+            </a>
+        </li>
+
         <li class="menu-item {{ isActiveRoute(['admin.contacts']) }}">
             <a href="{{ route('admin.contacts') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-contact"></i>

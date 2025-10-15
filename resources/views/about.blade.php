@@ -1,22 +1,30 @@
 @extends('layouts.app')
 @section('title', 'About Page :: ' . getSettings()->app_name)
 @section('content')
-<br><br><br>
+    <br><br><br>
     <section class="relative h-screen bg-cover bg-center" style="background-image: url('image-1715690317589.png');">
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         <div class="absolute inset-0 flex items-center justify-center">
-            <img alt="{{ getSettings()->app_name }} Large Logo" class="w-1/3"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFPNLmcW3lfyvLcQVm7mwMoBpaVKEdUr9dFG3Er4SObQweOIbfRXUzpfOM6R5s6Gn7-KL1CuRjXHiqXPGbZofnQUO8YF4xktEaEWUJ50CBGogyNHKcBuog36hcJ8NkYXU9W3OpsDZtgI50JHZyxOZAlm282WozX_ojn4f6yGJhwsTiVI-BsWCRsR1KRmXcBncmBtZHOqoyhducOOL8DBHdmfmjdPV5RPXbtUJsC_XWzqTNd2CbM8eKygIBwaOK0DHq-kyXaYsfOXA" />
+            {{-- <img alt="{{ getSettings()->app_name }} Large Logo" class="w-1/3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFPNLmcW3lfyvLcQVm7mwMoBpaVKEdUr9dFG3Er4SObQweOIbfRXUzpfOM6R5s6Gn7-KL1CuRjXHiqXPGbZofnQUO8YF4xktEaEWUJ50CBGogyNHKcBuog36hcJ8NkYXU9W3OpsDZtgI50JHZyxOZAlm282WozX_ojn4f6yGJhwsTiVI-BsWCRsR1KRmXcBncmBtZHOqoyhducOOL8DBHdmfmjdPV5RPXbtUJsC_XWzqTNd2CbM8eKygIBwaOK0DHq-kyXaYsfOXA" /> --}}
+            <img alt="{{ getSettings()->app_name }} Large Logo" class="w-1/3" src="{{ public_asset('assets/front/images/about_us.jpeg') }}" />
         </div>
     </section>
     <section class="py-16">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-semibold mb-4">Who we are</h2>
-            <p class="max-w-4xl mx-auto text-gray-600">Welcome to HeyConcrete, where we redefine the traditional use
-                of concrete. We are a brand that prides itself on innovation and inspiration, pushing the boundaries
-                of what is possible with this versatile material. We create unique and timeless pieces that elevate
-                any space, from residential to commercial.</p>
-            <div class="flex justify-center items-center space-x-8 mt-12">
+            <h2 class="text-3xl font-semibold mb-4">About Us</h2>
+            <p class="max-w-4xl mx-auto text-gray-600">{{ getSettings()->app_name }} has been a trusted leader in the
+                Reinforced Cement
+                Concrete (RCC) product industry since its establishment in 1958. For over six decades, the unwavering
+                support of our clients has been instrumental in our sustained presence and continuous evolution within this
+                industry, driving us to develop newer materials and products. Our unwavering dedication to quality is
+                underscored by our adherence to SO 9001:2015 and IS standards ensuring that every product we deliver not
+                only meets but often exceeds industry benchmarks for durability, performance, and environmental
+                responsibility. Our mission at {{ getSettings()->app_name }} is to be the cornerstone of robust and
+                sustainable construction
+                by consistently providing superior quality Reinforced Cement Concrete (RCC) products. We are dedicated to
+                empowering our clients with innovative, durable, and reliable precast concrete solutions that not only meet
+                but exceed their project requirements and industry standards.</p>
+            {{-- <div class="flex justify-center items-center space-x-8 mt-12">
                 <img alt="Certification Seal 1" class="h-24"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4lFgc1BG_Wp9s8NwYzbh4awJne3eURziZ_kCzmKjk66gprVBzh_zONP_qO5U9omAgu4I6lRNVUTL0bw7hy5bmIutbGbaD07kG2fo7HQTxszocshEy_rzYVUtVNFSZwP6httVkppi1_HWVafYaRcNzzosTZ8_JyVEXDJto9RPaIAtqsDSE_WK0HAmVW9VhUnCyCs6aLDE5GVO8qxjXqkJ6zqIzWIKVnsLzcfDZIHvo7cVG6_9sMvirSSvWgPj5wTv_PG8XyD5Bt9c" />
                 <img alt="Certification Seal 2" class="h-24"
@@ -36,10 +44,10 @@
                 <span class="h-2 w-2 bg-gray-400 rounded-full"></span>
                 <span class="h-2 w-2 bg-gray-900 rounded-full"></span>
                 <span class="h-2 w-2 bg-gray-400 rounded-full"></span>
-            </div>
+            </div> --}}
         </div>
     </section>
-    <section class="relative">
+    {{-- <section class="relative">
         <img alt="Modern bathroom with concrete sinks" class="w-full h-auto"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFnAJoB1941D0IUe67aTaYJFkB_uisCc-GrhL58RCdMnJeJw3PAFHGu7iZl2OJbKj5DJD3L9U7cyMHiTOE0Aotag1LbjLcaTIXjfBtvOZTm9GRvK0-vm675bRg7_z3bvJCZ-3-BjmmfW0eIg2gMUGSv9Pzzzag1brklav_Q8dZfL6ImQXlVITdrqi0oEjUKGqz-rWcB7o7ZH_QGGFigTDGNEgYLBctsWpu-0txEXVK70KWct7uy80MKUpVr2ip2iT5T9LY7kb0w1M" />
         <div class="absolute inset-0 flex items-center justify-center">
@@ -52,7 +60,7 @@
                 </svg>
             </button>
         </div>
-    </section>
+    </section> --}}
     <section class="py-24 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -61,15 +69,22 @@
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0osgLkdaVzq3VT3IjbgNGa9CZLlq6voLzt1DwE8NPgacA311ydw2ClmxviceXUhaeQikMDBsWfFzF9jbOe0Mabmgdh_1TIABJFYICO9ugksNx6Fywz3-em0CIfKkgELq8i5TO18GIWc37LmkAAJoZMGLONhOCGE2sLqbLOLqA5CvU0wVvujOnJvkJZ574ueAz1GwDJ17R3IlpEJLx4N2SdjBuIjAAARn-r7MO7uTZeR7scbB4_K-L-T56Iv6v5cTJv0dPwmFBYZk" />
                 </div>
                 <div>
-                    <h2 class="text-3xl font-semibold mb-4">Our Story</h2>
-                    <p class="text-gray-600 mb-4">Our products range from wall panels and wall murals to luxury wash
-                        basins and more. Our passion for concrete has driven us to take our craft and creativity to
-                        new levels to new heights. In the industry for past six years, we use a self-developed
-                        concrete premix that is a result of tireless experimentation with different ratios and
-                        materials. Our goal is to create products that are not only functional but also catch the
-                        attentive eye. From the very beginning till packaging, a dedicated team takes care of
-                        creating your bespoke concrete piece. Each piece is handcrafted to perfection, with
-                        attention to every detail.</p>
+                    <h2 class="text-3xl font-semibold mb-4">Services</h2>
+                    <p class="text-gray-600 mb-4">
+                        At {{ getSettings()->app_name }}, we offer more than just high-quality precast products; we provide
+                        integrated
+                        services to guide your project from initial concept to successful completion. Our expertise begins
+                        with design and engineering support, where we collaborate with your team for optimal precast
+                        solutions, offering conceptualization, detailed architectural & structural design, and value
+                        engineering. The core of our offering lies in our state-of-the-art manufacturing, where we
+                        meticulously produce standard and customized RCC and GRC elements in a controlled factory
+                        environment, using standardized materials ensuring precise dimensional accuracy and rigorous quality
+                        control through every step. Once manufactured, our dedicated logistics team ensures efficient and
+                        just-in-time delivery of products to your site. While installation is expertly handled by our
+                        trusted partner network, we remain committed to offering comprehensive project management support,
+                        providing technical assistance and seamless coordination to ensure your precast project runs
+                        smoothly.
+                    </p>
                     <p class="text-gray-600">We're here to change your perception about concrete by creating a grey
                         revolution and evolve with you.</p>
                 </div>
@@ -80,8 +95,8 @@
                         create innovative solutions that will elevate any project. Join us on our journey as we
                         continue to push the boundaries of design and create through the power of concrete. We're
                         here to change the world through smart design.</p>
-                    <button class="bg-gray-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-900">CONTACT
-                        US</button>
+                    <a href="{{ route('front.contact') }}"
+                        class="bg-gray-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-900">CONTACT US</a>
                 </div>
                 <div>
                     <img alt="Craftsman working on a concrete slab" class="rounded-lg shadow-lg w-full"
@@ -90,47 +105,34 @@
             </div>
         </div>
     </section>
-    <section class="py-24 bg-gray-50">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-semibold mb-2">WHAT CLIENTS SAY ABOUT {{ getSettings()->app_name }}?</h2>
-            <p class="text-gray-600 mb-12">Discover what our valued clients have to say about their experience with
-                {{ getSettings()->app_name }}.</p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md text-left">
-                    <div class="text-6xl text-gray-300 font-serif mb-4">“</div>
-                    <p class="text-gray-600 mb-6">Working with {{ getSettings()->app_name }} was such an amazing experience. I had
-                        some references who served my imagination on the primary level. After briefing the team
-                        about my ideas and perspectives, what I received as a final drawing was such a delight. Take
-                        this as an honest review from an artist.</p>
-                    <p class="font-semibold">Ar. Saheras Baba</p>
-                    <p class="text-sm text-gray-500">Artist</p>
+
+    @if (count($client_feedbacks) > 0)
+        <section class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-semibold mb-2">WHAT CLIENTS SAY ABOUT {{ getSettings()->app_name }}?</h2>
+                <p class="text-gray-600 mb-12">Discover what our valued clients have to say about their experience with
+                    {{ getSettings()->app_name }}.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    @foreach ($client_feedbacks as $key => $client_feedback)
+                        <div class="bg-white p-8 rounded-lg shadow-md text-left">
+                            <div class="text-6xl text-gray-300 font-serif mb-4">“</div>
+                            <p class="text-gray-600 mb-6">{{ $client_feedback->comment }}</p>
+                            <p class="font-semibold">{{ $client_feedback->name }}</p>
+                            <p class="text-sm text-gray-500">{{ $client_feedback->location }}</p>
+                        </div>
+                    @endforeach
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md text-left">
-                    <div class="text-6xl text-gray-300 font-serif mb-4">“</div>
-                    <p class="text-gray-600 mb-6">Amazing experience working with "{{ getSettings()->app_name }}". The company is
-                        very professional with promptness and dependability regarding their service. Not just this,
-                        the company also shows their belief in social morals by incorporating quality and quantity,
-                        both, are impressive! I would recommend this professional company that has strong work
-                        ethics and products genuinely.</p>
-                    <p class="font-semibold">Bhairavi</p>
-                    <p class="text-sm text-gray-500">Udaipur</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md text-left">
-                    <div class="text-6xl text-gray-300 font-serif mb-4">“</div>
-                    <p class="text-gray-600 mb-6">Nothing beats {{ getSettings()->app_name }} when it comes to customization. We had
-                        some ideas for our compound walls but could not find the exact material. And that is when we
-                        came across this brand. The team at {{ getSettings()->app_name }} gives you exactly what you desire. The best
-                        part of their work is the level of finishing they get. The quality of work is also
-                        excellent. Highly recommended.</p>
-                    <p class="font-semibold">Ar. Sanjay</p>
-                    <p class="text-sm text-gray-500">Udaipur</p>
+
+                <div class="flex justify-center mt-8 space-x-2">
+                    @foreach ($client_feedbacks as $key => $client_feedback)
+                        @if ($loop->first)
+                            <span class="h-2 w-2 bg-gray-900 rounded-full"></span>
+                        @else
+                            <span class="h-2 w-2 bg-gray-400 rounded-full"></span>
+                        @endif
+                    @endforeach
                 </div>
             </div>
-            <div class="flex justify-center mt-12 space-x-2">
-                <span class="h-2 w-2 bg-gray-400 rounded-full"></span>
-                <span class="h-2 w-2 bg-gray-900 rounded-full"></span>
-                <span class="h-2 w-2 bg-gray-400 rounded-full"></span>
-            </div>
-        </div>
-    </section>
+        </section>
+    @endif
 @endsection

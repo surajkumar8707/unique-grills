@@ -11,7 +11,7 @@
                 <p class="mt-4 text-gray-600 text-base md:text-lg">
                     Just when you thought concrete is all about grey, static, ponderous, one-dimensional...
                 </p>
-                <a href="#"
+                <a href="{{ route('front.about') }}"
                     class="mt-6 inline-block bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition">
                     Learn More
                 </a>
@@ -19,33 +19,10 @@
 
             <!-- RIGHT IMAGE -->
             <div class="flex justify-center md:justify-end">
-                <img src="{{ public_asset('assets/front/images/home.jpg') }}"
-                    alt="Hero"
+                <img src="{{ public_asset('assets/front/images/home.jpg') }}" alt="Hero"
                     class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain rounded-xl shadow-lg">
             </div>
-            {{-- <div class="relative flex items-center justify-center">
-                <div class="relative w-72 h-80 z-10">
-                    <img alt="Interior with a brown sofa" class="rounded-3xl object-cover w-full h-full shadow-lg"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZslDBVSwFFO_avh_UNIbTyRzpOoUWXwiKbTO6wfGGhw4oaYmIJEK0OXVP2RVcAKN3cwHgWVNXFdoN_B_vFlL8rghB7LrB0epYrvtOOPLc6ta6Ghq2ved5Lpwng8IrZjYxWu9lsQ0jzgbWUGImb6hsj7DB3Buqj0eWnUjtfKV9pIokHTweEEEErb_wpvCqb6o0OaC8OFSsAVZ3hVu3G_M-hXpti3mElLgwtp9zQ1yh0Fg9Ha2Yj4cicB5HP3CV2Xtctn966ddPWYXR"
-                        style="border-top-left-radius: 100px; border-top-right-radius: 100px;" />
-                    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-3xl flex flex-col items-center justify-center text-white p-4"
-                        style="border-top-left-radius: 100px; border-top-right-radius: 100px;">
-                        <h3 class="text-5xl font-bold">100+</h3>
-                        <p class="text-center mt-2">PRODUCT &amp; VARIETY TO CHOOSE FROM</p>
-                    </div>
-                </div>
-                <div class="absolute left-1/2 -bottom-20 w-64 h-80 z-20">
-                    <img alt="Modern building exterior" class="rounded-3xl object-cover w-full h-full shadow-lg"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhJz1zlTIvTEMjXKFeb4dvTh_VnnutXgpCvXmwMDsyXmBh3YUsVzmk8C70St1eQfUe8mu-kl_W6woBusR7EMAZojqrUFnZu01QsUJuNca2RRqxWoxe_Wb0wvgGoeSvVRo4ArosvPwiw4FwWaeO9d5C-_OeCcNBmDOc84qXney4cAE-B6f-XMw6mmJNSt6JzfKJZHh5gClCle2Cf59HveP5muoBE-jxJJ_ZpqXcfTgqJ1FEUEv7i57rCyp1kXsgehBHjSYuK_JTELci"
-                        style="border-bottom-right-radius: 100px;" />
-                    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-3xl flex flex-col items-center justify-center text-white p-4"
-                        style="border-bottom-right-radius: 100px;">
-                        <h3 class="text-5xl font-bold">100K</h3>
-                        <p class="text-center mt-2 text-sm">SQ.FT. MANUFACTURING FACILITY WHICH IS INDIA'S BIGGEST
-                        </p>
-                    </div>
-                </div>
-            </div> --}}
+
             <div class="text-brown-700">
                 <h2 class="text-4xl font-semibold mb-6">EXPOSED CONCRETE AT YOUR CONVENIENCE.</h2>
                 <p class="mb-4 text-sm leading-relaxed">
@@ -74,81 +51,48 @@
                 <div class="w-16 h-px bg-gray-400 mx-auto mb-8"></div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                     @foreach ($categories as $category)
-                        <div class="border text-center">
-                            <img alt="{{ $category->name }}" class="w-full h-48 object-cover rounded-lg mb-4"
-                                src="{{ public_asset($category->photo) }}"/>
-                            <h3 class="font-semibold">{{ $category->name }}</h3>
-                        </div>
+                        <a href="{{ route('show.categories', $category->slug) }}">
+                            <div class="border text-center goto_category_page" href="{{ route('show.categories', $category->slug) }}">
+                                <img alt="{{ $category->name }}" class="w-full h-48 object-cover rounded-lg mb-4"
+                                    src="{{ public_asset($category->photo) }}" />
+                                <h3 class="font-semibold">{{ $category->name }}</h3>
+                            </div>
+                        </a>
                     @endforeach
                 </div>
-
-                {{-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <img alt="Wall Murals" class="w-full h-48 object-cover rounded-lg mb-4"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_x41FyACwCjGj4OJfI0PJokgeGcBF1ZHWsq4L59gS7ZYs9rSQ1hMgg-h8r09HVu-bhV6bLdWfDIh2raNQi1GVupWpQthd56XNWIdREMw-fkLSUtysfUqturCJ5nvVA1OGLMkewBah0twv44WtsSEGl1ThzpDxY1YEty6KYXq7iNMxsZoN0p-lTz64ebXpeBFwk6y0Lpzv9wlxRHHU2694jruY6jUXWaiYgP0cNzZjQjAtV9ycE7LGXQjYAmj9nwzfHDjOqjUaFJk" />
-                    <h3 class="font-semibold">WALL MURALS</h3>
-                </div>
-                <div class="text-center">
-                    <img alt="Brick Claddings" class="w-full h-48 object-cover rounded-lg mb-4"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0552E1Mog8d_kPDgjGnWzzx3yidyUlOkSdoo9nkuOIuy81s6XD9B72pneEcmr93IQb4Cn8IHb9xENvZJyTVg5gbbK0ss7xRrQnW9jCJnL4M53ANK8vtZDaAOiV3tR9n4HvMiMokZrv24sVlBIUKZv3yv6g4uZZg3gWoYc676Fmc5ZU4mq7G4rjAQfsmtbEExzQLpGg-XrbcCO3Y04G4Zdbbys4KzYnxZFzcHl5uhWrxYsEt8tpHCbGbEzfHgNnDq0SUpoRhg81p8" />
-                    <h3 class="font-semibold">BRICK CLADDINGS</h3>
-                </div>
-                <div class="text-center">
-                    <img alt="Wash Basins" class="w-full h-48 object-cover rounded-lg mb-4"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYRz5wVc1R0xBJr_vZ6wsI2YtlopJSr512-R6QnbTSls3egUhHkymZcw8pqPH9p2TdBFY5HCuB5KCBIr6xrRnwSnB3MvkBzUrU2UlQXGal8BlF97p5N50KMqI6uj4QVqRkG_A6tBpSZgDfNoO15NvzfMsahK2nC6SK_vfbcPPqX-5CzExXkdMgg29iwybCqv6byrcY381MX0-AOMMaWayZDyNt6UMDxwuCS_br6B4qVb10Dw4POexuh-UdzSSMSBIuy3vvN994ofQ" />
-                    <h3 class="font-semibold">WASH BASINS</h3>
-                </div>
-                <div class="text-center">
-                    <img alt="Wall Panels" class="w-full h-48 object-cover rounded-lg mb-4"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqwAUgnEeVPGY4OaiirkIIFb3PbeDwF8DJ3lavthCfRIXJAUEhqVwnYtHXqVkikdEELovh5iKIQnsxU3eZJAuRmAvDUKFKpZzQJpREtTnrk2kjTdV63MckKfZ1rNF3v5N5LfFI2hIhGZ68Cll5PzDQFzHgfGBSOdsDNr4DVM9uT-rETKlTOcmGphUTgc4iPJOTAv2VRzA4FCNRbNfmDx-L22OCvzEnsidx5fU7e3EuXVTt3-d3gFYCn91FN-tD9qp7nMj48DIRKsQ" />
-                    <h3 class="font-semibold">WALL PANELS</h3>
-                </div>
-            </div> --}}
             </div>
         </section>
     @endif
 
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl font-semibold mb-8">WHAT CLIENTS SAY ABOUT {{ getSettings()->app_name }}?</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-left">
-                <div class="bg-white p-6 rounded-lg shadow-md relative">
-                    <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
-                    <p class="mt-12 text-sm text-gray-600 leading-relaxed">
-                        “I would like to appreciate the quality of the products and services offered by Hey
-                        Concrete. The range of products and the flexibility to customize them is excellent.”
-                    </p>
-                    <p class="mt-4 font-semibold text-sm">Ashish Patel</p>
-                    <p class="text-xs text-gray-500">Ahmedabad</p>
+    @if (count($client_feedbacks) > 0)
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl font-semibold mb-8">WHAT CLIENTS SAY ABOUT {{ getSettings()->app_name }}?</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-left">
+                    @foreach ($client_feedbacks as $key => $client_feedback)
+                        <div class="bg-white p-6 rounded-lg shadow-md relative">
+                            <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
+                            <p class="mt-12 text-sm text-gray-600 leading-relaxed">
+                                “{{ $client_feedback->comment }}”
+                            </p>
+                            <p class="mt-4 font-semibold text-sm">{{ $client_feedback->name }}</p>
+                            <p class="text-xs text-gray-500">{{ $client_feedback->location }}</p>
+                        </div>
+                    @endforeach
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md relative">
-                    <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
-                    <p class="mt-12 text-sm text-gray-600 leading-relaxed">
-                        “We are extremely happy with the products from {{ getSettings()->app_name }}. The quality of
-                        products is
-                        excellent and we love the raw and rustic feel that it gives to our space.”
-                    </p>
-                    <p class="mt-4 font-semibold text-sm">Hetal Shah</p>
-                    <p class="text-xs text-gray-500">Mumbai</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md relative">
-                    <span class="material-icons text-gray-300 text-5xl absolute top-4 left-4">format_quote</span>
-                    <p class="mt-12 text-sm text-gray-600 leading-relaxed">
-                        “{{ getSettings()->app_name }} has a very good collection of products and the quality is amazing. We
-                        used
-                        their brick claddings for our project and we are really happy with the outcome.”
-                    </p>
-                    <p class="mt-4 font-semibold text-sm">Rajesh Kumar</p>
-                    <p class="text-xs text-gray-500">Delhi</p>
+                <div class="flex justify-center mt-8 space-x-2">
+                    @foreach ($client_feedbacks as $key => $client_feedback)
+                        @if ($loop->first)
+                            <span class="w-2 h-2 bg-gray-800 rounded-full"></span>
+                        @else
+                            <span class="w-2 h-2 bg-gray-400 rounded-full"></span>
+                        @endif
+                    @endforeach
                 </div>
             </div>
-            <div class="flex justify-center mt-8 space-x-2">
-                <span class="w-2 h-2 bg-gray-800 rounded-full"></span>
-                <span class="w-2 h-2 bg-gray-400 rounded-full"></span>
-                <span class="w-2 h-2 bg-gray-400 rounded-full"></span>
-            </div>
-        </div>
-    </section>
+        </section>
+    @endif
+
     @if (count($projects) > 0)
         <section class="py-16">
             <div class="container mx-auto px-4 text-center">
