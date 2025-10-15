@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Process\Process;
 
 /*
 |----------------------------------------------------------------------
@@ -12,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 | will be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/git-pull', function () {
+    try {
+        $process = new Process(['git', 'pull', 'origin', 'main']);
+        $process->run();
+
+        if (!$process->isSuccessful()) {
+            return response("<pre>Error: " . $process->getErrorOutput() . "</pre>", 500);
+        }
+
+        return response("<pre>" . $process->getOutput() . "</pre>", 200);
+    } catch (\Throwable $e) {
+        return response("<pre>Exception: " . $e->getMessage() . "</pre>", 500);
+    }
+});
 
 // Redirect to admin login page
 Route::get('/', function () {
