@@ -19,7 +19,7 @@ class SocialMediaLinkSeeder extends Seeder
         // Seed new data with default URLs
         SocialMediaLink::create([
             'youTube' => 'https://www.youtube.com/',
-            'youTube_show' => true,
+            'youTube_show' => false,
 
             'instagram' => 'https://www.instagram.com/uniquegrills_precast/',
             'instagram_show' => true,
@@ -31,7 +31,7 @@ class SocialMediaLinkSeeder extends Seeder
             'linkedin_show' => true,
 
             'twitter' => 'https://twitter.com/',
-            'twitter_show' => true,
+            'twitter_show' => false,
         ]);
     }
 }

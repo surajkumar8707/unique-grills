@@ -52,7 +52,8 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                     @foreach ($categories as $category)
                         <a href="{{ route('show.categories', $category->slug) }}">
-                            <div class="border text-center goto_category_page" href="{{ route('show.categories', $category->slug) }}">
+                            <div class="border text-center goto_category_page"
+                                href="{{ route('show.categories', $category->slug) }}">
                                 <img alt="{{ $category->name }}" class="w-full h-48 object-cover rounded-lg mb-4"
                                     src="{{ public_asset($category->photo) }}" />
                                 <h3 class="font-semibold">{{ $category->name }}</h3>
@@ -109,26 +110,22 @@
             </div>
         </section>
     @endif
-    {{-- <section class="py-12 bg-gray-50">
+    <section class="py-12 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div
-                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center justify-items-center">
-                <img alt="Certification logo 1" class="h-16 object-contain"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWJz9PHqDnHMiQFcA1-Aj8sY0e0jpjEvhushjEjmrikcvd-JEcIcXZ0BC8HpL2TJ-AxsMSy6Ydxj3PK0sz41ISpvi5E0K1AvV3k_7y4VEAXIjhlDQHVVDXRNd8FvHrVrU8Rs66DQbSFdCLaRfLdwoIPpwOlxzdmntoeA3mqzccoLGfJhB1C6D8r4KTarkmwX_E8RCU36pi0ff3VmU9UDFwrKg6HtwFSYT84brSr-Ba29JPSyfM9yGCXdHZDy2txbudNCrYgeb2ZbE">
-                <img alt="Certification logo 2" class="h-16 object-contain"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOvXeLXHpBkwDdvQvaIbJOQqnbzTrshNWQjsZTRCE9m_5uBeKCAhK6JwWSioIdizUgFkGu46qWafz6pA8CqpUz3gAnLsuvpuT4wjbBPNcChWX0EipRwRha9uDZJtEN0PC5mSGPbw6zsUL61XhAllj7SIefvcIVsouW2YPafBjHOuISJfaXg0NKuqZjhdOnwY5gsj1F9MIaKVXTazf6Dk70R4okqkrdwh9loMkucs56W3z79ox7-jlSUYRvgIW5qCxhXFKHHcqEz6w">
-                <img alt="Certification logo 3" class="h-16 object-contain"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_RkhoH_TMrMcuG2ZPDjvTN8M_FF3A6mEXypiZJibmvoYGU9e50XCS5hD7PVsHkEmpr6pv_iqi-HMoBz9wRF-mZPjVsQZtoJ87T_Ny5meXAadCoK4tcTnkNkZeasEVOb8o7215m69NdtJ1KSxMLsbmLrpfbwtc6T_Bb0_jhOPwm7rQ5d4x9WJs8whUbbfV9dSLkDKfDKrOFUBj5xdddMla0dJ1spkK87bp7AVNMTyydglTUga3wp2PNTSPjPM21iiyPOtiIb52YcY">
-                <img alt="Certification logo 4" class="h-16 object-contain"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVTM7WScEPG_0YnE-0PzvmXRpwcs7g6SACO4B82kwl4yJi61jIWAXtGa0xOzsTphscUX8EjdkSRjiAFGRDR2QR3P5MwbB2VHhCsf4HS1_qvh5o7RLHZ_3vvQBWY5jNYTYwj3HpN7k9HIgOikriepYDrs9JMe_QYUh3Kflbnf1eGAoidW8Yul-SVySiPb5TvQX6pFgBSlxt_p7cV7MJbGg1b2VpOPA5bLWmRpQBu_croyTfwAQE7s8aq-yLJwEOK-ritRkjXu4aub4">
-                <img alt="Certification logo 5" class="h-16 object-contain"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI_qe81-sZ66cwWVUwK54xp6KgLsEMcHlP3QarOIR8f3n2eqVfOp43cwh2gEseHaKkH7A72kJYacK_rKj8Xw0SDWMar_8ZZZAoJsaZ65v9RmCS3qWUZrQoEXE0FlfEacfL-GCbU9aZOrSn3AMz76p5xn1KHjWAc9_NDgqsTwW8l0EWtI6ZBT6dwx34C32knLVFn3Zi977HWzu0SnjaKhFl6eYRK31al4apBV8OlN6D8rRsl3C0vcWHCpvHmSyuDzZTSMCVQ3NQfYE">
-                <img alt="Certification logo 6" class="h-16 object-contain"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBSJTfMoCb7MyFnCAyCTkgHxTQFWBfaF1YDrLrh80YdRiwk1Yag5c2Z3s5oWVUC0mHAK35SnuqxQpVXn8MYy912exp8i7LUhiNcmoLtcT_FNGHC3mbeZw4nL5oEP-xMQhmeITmeiJiAD9Jtuu0JJaVNMqwcmsM64WlAPiacvSw7lRZZ_RKNE-6k5ClTyHk-PL5RdindxSPZHK4AEMqkNwIZGMwfMpfwXqvxOPVNXMrdZqnwHQ1W4vbnXSjE7ZvFpsmQyRzLRqO_Oc">
-                <img alt="Certification logo 7" class="h-16 object-contain"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAntuguNUjs3AtW9LorFCqDZHWVVlQ4Dut145Wd6hgA3BvJaUGmSD9jI4whnYRSss13tMpGn4e5L2wQtWGdCv4hBVUoMug3QC_z6X2JlA1icYHzNSBv-Oi7WXmckx-FYYIZ1HDo3SmoyniimOxAQPa9X8H4DtKlWkDF-prX19DxRropHKTK3aIGUIsNg0lhZiC3cqyW3AbY-QKS-GjVj78Co0Ug15ER__QA8tCOsjHfqSrH5kR9nh_JSrjOCv6CSHO-mAe5yFUD6zM">
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <img alt="Certification logo 1" class="h-20 object-contain"
+                    src="{{ public_asset('assets/front/images/iso/iso1.jpg') }}">
+                <img alt="Certification logo 2" class="h-20 object-contain"
+                    src="{{ public_asset('assets/front/images/iso/iso2.jpg') }}">
+                <img alt="Certification logo 3" class="h-20 object-contain"
+                    src="{{ public_asset('assets/front/images/iso/iso3.jpg') }}">
+                <img alt="Certification logo 4" class="h-20 object-contain"
+                    src="{{ public_asset('assets/front/images/iso/iso4.jpg') }}">
+                <img alt="Certification logo 5" class="h-20 object-contain"
+                    src="{{ public_asset('assets/front/images/iso/iso5.jpg') }}">
             </div>
         </div>
-    </section> --}}
+
+    </section>
 
 @endsection
